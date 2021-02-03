@@ -1,0 +1,408 @@
+#about {background-image: url(../images/main/aboutBg.png);}
+
+#climate {background-image: url(../images/main/climateBg.png);}
+
+#forest {background-image: url(../images/main/forestBg.png);}
+
+#life {background-image: url(../images/main/lifeBg.png);}
+
+#ocean {background-image: url(../images/main/oceanBg.png);}
+
+#arctic {background-image: url(../images/main/arcticBg.png);}
+
+#values {background-image: url(../images/main/valueBg.png);}
+
+#donate {background-image: url(../images/main/donateBg.png);}
+
+
+
+@media screen and (min-width:1280px){
+    
+    div > .firstBanner {padding-bottom: 7.4%; }
+    .firstBanner h2 {padding-top: 30.81%;padding-bottom: 18.14% ;font-size: 85px;text-align: center;line-height: 40px; color: white;}
+    .firstBanner h2 small {width: 100%; display: inline-block; font-size: 14px;}
+    .firstBanner span {display: block;text-indent: -9999px;max-width: 40px;margin: 0 auto;}
+    .firstBanner span:first-of-type{background-position:-280px -120px; padding-bottom: 44px;}
+    .firstBanner span:last-of-type {background-position:-485px -120px; padding-bottom: 20px;
+        animation-name: down;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        transform-style:preserve-3d;
+    }
+
+    @keyframes down {
+        from{
+               transform:translateY(0);
+        }
+        to{
+               transform:translateY(10px);
+        }
+    }
+
+    /* .firstBanner 공통 */
+
+    .aboutSub section:not(:first-of-type) {padding: 0 10.52%;}
+    .aboutSub #aboutUs div {max-width: 1500px;width: 78.94%;margin: 0 auto;padding: 270px 0 240px 135px;background-image: url(../images/about/aboutbg01.png);background-repeat: no-repeat;background-size: 600px 850px;background-position: right;}
+    .aboutSub #aboutUs div h2 {font-size: 85px;font-weight: 400;color: #377308;padding-bottom: 55px;}
+    
+    .aboutSub #aboutUs div p,
+    .aboutSub #aboutUs div ul li {font-size: 16px;color: #3b3b3b;}
+    .aboutSub #aboutUs div p {max-width: 600px;width: 40%;padding-bottom: 55px;line-height: 28px;font-weight: 500;}
+    .aboutSub #aboutUs div p strong {display: block;padding-bottom: 55px;}
+
+    .aboutSub #aboutUs div ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .aboutSub #aboutUs div ul {max-width: 570px;width: 38%;}
+    .aboutSub #aboutUs div ul li {float: left; font-weight: 300; padding-right: 10px;max-width: 180px; width: 30%; }
+    .aboutSub #aboutUs div ul li mark {display: block;font-size: 65px;font-weight: 400;color: #377308;background-color: unset;font-style: normal;}
+    .aboutSub #vision {background-image: url(../images/about/aboutbg02.png);display: flex;flex-direction: row;}
+    .aboutSub #vision div {max-width: 750px;width: 50%;padding: 310px 125px 200px 0;}
+    .aboutSub #vision div h2 {font-size: 65px;color: white;padding-bottom: 90px;}
+    .aboutSub #vision div p {font-size: 18px; color: white;padding-bottom: 50px;padding-right: 100px;}
+    .aboutSub #vision ul {max-width: 375px;width: 25%;}
+    .aboutSub #vision ul:first-of-type{background-color: gray;}
+    .aboutSub #vision ul:last-of-type{background-color: darkgreen;}
+
+    .aboutSub #wedo {background-image: url(../images/about/aboutbg03.png);background-repeat: no-repeat;background-position: top right;padding-right: 0;background-size: 1400px 750px;}
+    .aboutSub #wedo h2{padding-top: 515px;padding-bottom :60px;font-size: 65px;font-weight: 900;color: #3e3e3e;}
+    .aboutSub #wedo p {max-width: 540px;width: 36%;font-size: 19px;font-weight: 500;color: black;line-height: 30px;padding-bottom: 200px;}
+
+    .aboutSub #organisation {background-image: url(../images/about/aboutbg04.png);color: white;}
+    .aboutSub #organisation div {padding: 180px 6.7%;}
+    .aboutSub #organisation div h2 {font-size: 70px;font-weight: 900;margin-bottom: 90px;}
+    .aboutSub #organisation > div > span {display: block;text-transform: uppercase;font-size: 20px;font-weight: 500;padding: 5px 0;}
+    .aboutSub #organisation > div > span:last-of-type {margin-bottom: 90px;}
+    .aboutSub #organisation div ul {max-width: 1300px;width: 100%;}
+    .aboutSub #organisation div ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+    .aboutSub #organisation div ul li {float: left;max-width: 312px;width: 24%;padding-right: 1%;line-height: 18px;}
+    .aboutSub #organisation div ul li span {display: block;width: 100%;border: 3px solid white;border-bottom: none;text-indent: -9999px;}
+    .aboutSub #organisation div ul li strong {display: block;font-size: 27px;font-weight: 500; margin-bottom: 30px;}
+    .aboutSub #organisation div ul li strong::before {content: '';display: block;width: 70px;height: 60px; margin-bottom: 30px;}
+    .aboutSub #organisation div ul li:first-child strong::before {background-position: 0 -120px;}
+    .aboutSub #organisation div ul li:nth-child(2) strong::before {background-position: -70px -120px;}
+    .aboutSub #organisation div ul li:nth-child(3) strong::before {background-position: -140px -120px;}
+    .aboutSub #organisation div ul li:last-child strong::before {background-position: -210px -120px;}
+
+    /* about fin */
+
+    .climateSub section {color: white;}
+    .climateSub section:not(:last-of-type) {padding-left : 16.31%; padding-right : 16.31%;}
+    .climateSub section:not(:last-of-type) h2 {font-size: 65px;}
+    .climateSub .cm_cause {
+        background-image: url(../images/climate/climatebg01.png);
+        padding-top: 14.2%;
+        padding-bottom : 5% ;
+        
+    }
+
+    .climateSub .cm_cause h2 { margin-left: 11.71%; padding-bottom: 155px;} 
+
+    .climateSub .cm_cause p {max-width: 840px; width: 65.625%; line-height: 36px;  font-size: 20px; margin-left: 11.71%; padding-bottom: 85px;}
+
+    .climateSub .cm_active {
+        background-color: black;
+        text-align: center;
+        padding-top: 7.4%;
+        padding-bottom: 150px;
+    }
+
+    .climateSub .cm_active h2 {
+        margin-bottom: 100px;
+    }
+
+    .climateSub .cm_active ul {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        height: 640px;
+        background: url(../images/climate/cmTimeline.png) center center no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: space-between;
+    }
+
+    .climateSub .cm_active ul li {
+        max-width: 270px;
+        width: 21%;
+        
+
+    }
+    
+    .climateSub .cm_active ul li:first-of-type,
+    .climateSub .cm_active ul li:nth-of-type(2) {margin-left: 270px;}
+
+    .climateSub .cm_active ul li:nth-of-type(3),
+    .climateSub .cm_active ul li:last-of-type {margin-right: 270px;}
+
+    .climateSub .cm_active ul li strong {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .climateSub .cm_sign {
+        background-color: black;
+    }
+
+    .climateSub .cm_sign h2 {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    /* climate fin */
+    /* forest fin */
+    /* life fin */
+    /* plastic fin */
+
+    .oceanSub .pollution {
+        background-image: url(../images/ocean/oceanbg01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        padding: 150px 0 15%;
+
+    }
+
+    .oceanSub .pollution h2,
+    .oceanSub .challenge h2 {
+        font-size: 60px;
+        font-weight: 900;
+        text-align: center;
+        text-shadow: 0px 0px 20px white;
+        margin-bottom: 70px;
+    }
+    .oceanSub .pollution .innerBox::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .oceanSub .pollution .innerBox {
+        max-width: 1400px;
+        width: 73.68%;
+        margin: 0 auto;
+        background-image: url(../images/ocean/pollution_img01.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+
+    .oceanSub .pollution .innerBox p {
+        max-width: 700px;
+        width: 50%;
+        float: right;
+        padding-right: 5%;
+        line-height: 30px;
+        margin-bottom: 45px;
+    }
+
+    .oceanSub .pollution .innerBox p:last-of-type {margin-bottom: 185px;}
+
+    .oceanSub .pollution .innerBox ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .oceanSub .pollution .innerBox ul {
+        float: right;
+        max-width: 1000px;
+        width: 71.42%;
+    }
+    .oceanSub .pollution .innerBox ul li {
+        float: left;
+        max-width: 310px;
+        width: 31%;
+        margin-right: 3.5%;
+    }
+
+    .oceanSub .pollution .innerBox ul li:last-of-type {margin-right: 0;}
+
+    .oceanSub .scarySea {
+        background-color: #011a32;
+        padding: 10.18% 10.52% 12.51%;
+    }
+
+    .oceanSub .scarySea::after {content: ''; display: block; visibility: hidden; clear: both;}
+
+    .oceanSub .scarySea div {
+        width: 29.33%;
+        text-align: right;
+        padding-right: 2%;
+        float: left;
+    }
+
+    .oceanSub .scarySea div h2 {
+        font-weight: 900;
+        color: white;
+        font-size: 80px;
+        padding-top: 60px;
+        padding-left: 45%;
+        margin-bottom: 60px;
+    }
+
+    .oceanSub .scarySea div p {
+        font-weight: 400;
+        color: #a9a9a9;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .oceanSub .scarySea iframe {
+        width: 1020px;
+        height: 600px;
+    }
+
+    .oceanSub .challenge {
+        background-color: #011a32;
+        color: white;
+
+    }
+
+    .oceanSub .challenge div {
+        background-image: url(../images/ocean/challngebg.png);
+        background-repeat: no-repeat;
+        padding: 100px 0;
+        
+    }
+
+    .oceanSub .challenge div ul {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .oceanSub .challenge div ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+
+    /*sprite*/
+    .oceanSub .challenge div ul li {width: 18.5%;line-height: 30px;padding: 0 10px;float: left;}
+    .oceanSub .challenge div ul li strong {display: block;width: 200px;line-height: 20px;margin: 30px auto;}
+    .oceanSub .challenge div ul li strong::before {content: '';display: block;width: 120px;height: 120px;margin: 0 auto;}
+
+    .oceanSub .challenge div ul li:first-of-type strong::before{background-position: 0 0;}
+    .oceanSub .challenge div ul li:nth-of-type(2) strong::before{background-position: -120px 0;}
+    .oceanSub .challenge div ul li:nth-of-type(3) strong::before{background-position: -240px 0;}
+    .oceanSub .challenge div ul li:nth-of-type(4) strong::before{background-position: -360px 0;}
+    .oceanSub .challenge div ul li:last-of-type strong::before{background-position: -480px 0;}
+
+    
+
+    .oceanSub .sign {
+        background-image: url(../images/ocean/oceanbg04.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 380px;
+        padding-bottom: 70px;
+    }
+
+    .sign figure {
+        max-width: 1100px;
+        width: 57.89%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .sign figure figcaption {
+        max-width: 480px;
+        padding: 140px 160px 60px 70px;
+        border: 10px solid #011a32;
+        position: absolute;
+        right: 3%;
+        top: 16%;
+    }
+/*
+    
+
+    .sign figure figcaption h3 {
+        width: 250px;
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 60px;
+        margin-bottom: 125px;
+    }
+
+    .sign figure figcaption span {
+        display: block;
+        color: #c6c6c6;
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 60px;
+    }
+
+    .sign figure figcaption a {
+        display: inline-block;
+        background-color: #011a32;
+        padding: 15px 20px;
+    }
+
+*/
+
+    /* ocean fin */
+
+    .arcticSub .firstBanner{
+        clip-path: polygon(0% 0%,100% 0%,100% 80%,50% 100%,0% 80%);
+        padding-bottom: 380px;
+
+    }
+
+    .arcticSub section:not(:first-child) h2 {
+        font-size: 50px;
+        font-weight: 500;
+        max-width: 530px;
+        width: 41.40%;
+        margin: 0 auto 105px;
+    }
+
+    .arcticSub .aboutNorth::before {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 135px;
+        background-color: #28353e;
+        margin: 0 auto 8%;
+    }
+
+    .arcticSub .aboutNorth::after {content: ''; display: block; visibility: hidden; clear: both;}
+
+    .arcticSub .aboutNorth {
+        max-width: 1280px;
+        width: 67.36%;
+        margin: 0 auto 105px;
+       
+    }
+
+    .arcticSub .aboutNorth p {
+        width: 49%;
+        line-height: 36px;
+        padding-right: 1%;
+        margin-bottom: 35px;
+        float: left;
+        font-weight: 400;
+        
+    }
+
+    .arcticSub .background {
+        background-image: url(../images/arctic/arcticsub_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+
+    .arcticSub .background .activities {
+        max-width: 1280px;
+        width: 67.36%;
+        margin: 0 auto;
+        padding-top: 330px;
+        color: white;
+
+    }
+
+    .arcticSub .background .activities img {
+        max-width: 990px;
+        width: 78.34%;
+        margin: 0 auto;
+        display: block;
+    }
+
+
+
+
+
+
+
+    /* arctic fin */
+
+    
+}

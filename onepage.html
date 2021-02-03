@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.scrollify.min.js"></script>
+    <script>
+        $(function () {
+            $.scrollify({
+                section: ".panel",
+                scrollbars: false,
+                before: function (i, panels) {
+                    var ref = panels[i].attr("data-section-name");
+
+                    $(".pagination .active").removeClass("active");
+
+                    $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+                },
+                afterRender: function () {
+                    var pagination = "<ul class=\"pagination\">";
+                    var activeClass = "";
+                    $(".panel").each(function (i) {
+                        activeClass = "";
+                        if (i === 0) {
+                            activeClass = "active";
+                        }
+                        pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
+                    });
+
+                    pagination += "</ul>";
+
+                    $(".home").append(pagination);
+                }
+            });
+            /*
+          
+            Tip: The two click events below are the same:
+          
+            $(".pagination a").on("click",function() {
+              $.scrollify.move($(this).attr("href"));
+            });
+          
+            */
+            $(".pagination a").on("click", $.scrollify.move);
+        });
+    </script>
+    <style>
+        *{margin:0; padding:0;}
+        html,body{height:100%;}
+        section{height:100%;}
+        section.panel3{height:1400px;}
+        section ul.pagination{position:fixed; top:50%; left:-8%; width:20%; z-index:1000;}
+        section ul.pagination:after{content:''; display:block; visibility:hidden; clear:both;}
+        section ul.pagination li{display:block;}
+        section ul.pagination li a{text-decoration:none; display:inherit;}
+        section ul.pagination li a span{display:inherit; text-align:center; color:transparent; background-color:transparent; border-right:2px solid black; transition-duration:0.75s; width:0%; overflow:hidden;}
+        section ul.pagination li a.active span{background-color:black; color:white; width:100%;}
+    </style>
+</head>
+<body>
+    <section class="panel home" data-section-name="home" style="background-color:red;">
+    
+    </section>
+    <section class="panel second" data-section-name="second" style="background-color:green;">
+
+    </section>
+    <section class="panel third" data-section-name="third" style="background-color:blue;">
+
+    </section>
+    <section class="panel fourth" data-section-name="fourth" style="background-color:yellow;">
+
+    </section>  
+</body>
+</html>
