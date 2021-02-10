@@ -6,6 +6,8 @@
 
 #life {background-image: url(../images/main/lifeBg.png);}
 
+#plastic {background-image: url(../images/plastic/plasticbg.png);}
+
 #ocean {background-image: url(../images/main/oceanBg.png);}
 
 #arctic {background-image: url(../images/main/arcticBg.png);}
@@ -14,12 +16,34 @@
 
 #donate {background-image: url(../images/main/donateBg.png);}
 
+/*@media screen and (max-width: 767px)*/
 
-
-@media screen and (min-width:1280px){
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    div > .firstBanner {padding:0 16.31% 6%; 
+        animation-name: iWanChuBack;
+        animation-duration: 3s;
+    }
+    @keyframes iWanChuBack {
+        0% {
+          opacity: 1;
+        }
+      
+        25% {
+          opacity: 1;
+          transform: scale3d(0.1, 0.1, 0.1);
+        }
+      
+        50% {
+          opacity: 1;
+          transform: scale3d(0.1, 0.1, 0.1);
+        }
+      
+        to {
+          opacity: 1;
+        }
+      }
     
-    div > .firstBanner {padding-bottom: 7.4%; }
-    .firstBanner h2 {padding-top: 30.81%;padding-bottom: 18.14% ;font-size: 85px;text-align: center;line-height: 40px; color: white;}
+    .firstBanner h2 {padding-top: 32%;padding-bottom: 20%;font-size: 65px;text-align: center;line-height: 40px; color: white;}
     .firstBanner h2 small {width: 100%; display: inline-block; font-size: 14px;}
     .firstBanner span {display: block;text-indent: -9999px;max-width: 40px;margin: 0 auto;}
     .firstBanner span:first-of-type{background-position:-280px -120px; padding-bottom: 44px;}
@@ -43,40 +67,56 @@
     /* .firstBanner 공통 */
 
     .aboutSub section:not(:first-of-type) {padding: 0 10.52%;}
-    .aboutSub #aboutUs div {max-width: 1500px;width: 78.94%;margin: 0 auto;padding: 270px 0 240px 135px;background-image: url(../images/about/aboutbg01.png);background-repeat: no-repeat;background-size: 600px 850px;background-position: right;}
+    .aboutSub #aboutUs div {max-width: 1500px;width: 78.94%;margin: 0 auto;padding:18% 0 16% 9%; background-image: url(../images/about/aboutbg01.png);background-repeat: no-repeat;background-size: 600px 850px;background-position: right;}
     .aboutSub #aboutUs div h2 {font-size: 85px;font-weight: 400;color: #377308;padding-bottom: 55px;}
     
     .aboutSub #aboutUs div p,
     .aboutSub #aboutUs div ul li {font-size: 16px;color: #3b3b3b;}
-    .aboutSub #aboutUs div p {max-width: 600px;width: 40%;padding-bottom: 55px;line-height: 28px;font-weight: 500;}
+    .aboutSub #aboutUs div p {max-width: 600px;width: 40%;padding-bottom: 55px;line-height: 28px;}
     .aboutSub #aboutUs div p strong {display: block;padding-bottom: 55px;}
 
     .aboutSub #aboutUs div ul::after {content: ''; display: block; visibility: hidden; clear: both;}
     .aboutSub #aboutUs div ul {max-width: 570px;width: 38%;}
-    .aboutSub #aboutUs div ul li {float: left; font-weight: 300; padding-right: 10px;max-width: 180px; width: 30%; }
-    .aboutSub #aboutUs div ul li mark {display: block;font-size: 65px;font-weight: 400;color: #377308;background-color: unset;font-style: normal;}
-    .aboutSub #vision {background-image: url(../images/about/aboutbg02.png);display: flex;flex-direction: row;}
-    .aboutSub #vision div {max-width: 750px;width: 50%;padding: 310px 125px 200px 0;}
+    .aboutSub #aboutUs div ul li {float: left; padding-right: 1%;max-width: 180px; width: 30%; }
+    .aboutSub #aboutUs div ul li mark {display: block;font-size: 65px;color: #377308;background-color: unset;font-style: normal;}
+    .aboutSub #vision {background-image: url(../images/about/aboutbg02.png); height: 100vh; display: flex;flex-direction: row;justify-content: space-around;overflow: hidden;}
+    .aboutSub #vision div {max-width: 750px;width: 40%;padding: 19% 8.3% 14.5% 0;}
     .aboutSub #vision div h2 {font-size: 65px;color: white;padding-bottom: 90px;}
     .aboutSub #vision div p {font-size: 18px; color: white;padding-bottom: 50px;padding-right: 100px;}
-    .aboutSub #vision ul {max-width: 375px;width: 25%;}
-    .aboutSub #vision ul:first-of-type{background-color: gray;}
-    .aboutSub #vision ul:last-of-type{background-color: darkgreen;}
+    .aboutSub #vision ul {max-width: 375px;width: 23%;
+        animation-name: up;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        transform-style:preserve-3d;
+    }
 
-    .aboutSub #wedo {background-image: url(../images/about/aboutbg03.png);background-repeat: no-repeat;background-position: top right;padding-right: 0;background-size: 1400px 750px;}
+    @keyframes up {
+        from{
+            transform: translateY(0);
+        }to{
+            transform: translateY(100%);
+        }
+    }
+
+    .aboutSub #vision ul:first-of-type {animation-delay: 2s;}
+    .aboutSub #vision ul li {margin-bottom: 4%;}
+    .aboutSub #vision ul li img {width: 100%;}
+
+    .aboutSub #wedo {background-image: url(../images/about/aboutbg03.png);background-repeat: no-repeat;background-position: top right;background-size: 1400px 750px;padding-right: 0;}
     .aboutSub #wedo h2{padding-top: 515px;padding-bottom :60px;font-size: 65px;font-weight: 900;color: #3e3e3e;}
-    .aboutSub #wedo p {max-width: 540px;width: 36%;font-size: 19px;font-weight: 500;color: black;line-height: 30px;padding-bottom: 200px;}
+    .aboutSub #wedo p {max-width: 540px;width: 36%;font-size: 19px;color: black;line-height: 30px;padding-bottom: 200px;}
 
     .aboutSub #organisation {background-image: url(../images/about/aboutbg04.png);color: white;}
     .aboutSub #organisation div {padding: 180px 6.7%;}
-    .aboutSub #organisation div h2 {font-size: 70px;font-weight: 900;margin-bottom: 90px;}
-    .aboutSub #organisation > div > span {display: block;text-transform: uppercase;font-size: 20px;font-weight: 500;padding: 5px 0;}
+    .aboutSub #organisation div h2 {font-size: 70px;margin-bottom: 90px;}
+    .aboutSub #organisation > div > span {display: block;text-transform: uppercase;font-size: 20px;padding: 5px 0;}
     .aboutSub #organisation > div > span:last-of-type {margin-bottom: 90px;}
     .aboutSub #organisation div ul {max-width: 1300px;width: 100%;}
     .aboutSub #organisation div ul::after{content: ''; display: block; visibility: hidden; clear: both;}
     .aboutSub #organisation div ul li {float: left;max-width: 312px;width: 24%;padding-right: 1%;line-height: 18px;}
     .aboutSub #organisation div ul li span {display: block;width: 100%;border: 3px solid white;border-bottom: none;text-indent: -9999px;}
-    .aboutSub #organisation div ul li strong {display: block;font-size: 27px;font-weight: 500; margin-bottom: 30px;}
+    .aboutSub #organisation div ul li strong {display: block;font-size: 27px; margin-bottom: 30px;}
     .aboutSub #organisation div ul li strong::before {content: '';display: block;width: 70px;height: 60px; margin-bottom: 30px;}
     .aboutSub #organisation div ul li:first-child strong::before {background-position: 0 -120px;}
     .aboutSub #organisation div ul li:nth-child(2) strong::before {background-position: -70px -120px;}
@@ -88,187 +128,184 @@
     .climateSub section {color: white;}
     .climateSub section:not(:last-of-type) {padding-left : 16.31%; padding-right : 16.31%;}
     .climateSub section:not(:last-of-type) h2 {font-size: 65px;}
-    .climateSub .cm_cause {
-        background-image: url(../images/climate/climatebg01.png);
-        padding-top: 14.2%;
-        padding-bottom : 5% ;
-        
-    }
-
-    .climateSub .cm_cause h2 { margin-left: 11.71%; padding-bottom: 155px;} 
-
-    .climateSub .cm_cause p {max-width: 840px; width: 65.625%; line-height: 36px;  font-size: 20px; margin-left: 11.71%; padding-bottom: 85px;}
-
-    .climateSub .cm_active {
-        background-color: black;
-        text-align: center;
-        padding-top: 7.4%;
-        padding-bottom: 150px;
-    }
-
-    .climateSub .cm_active h2 {
-        margin-bottom: 100px;
-    }
-
-    .climateSub .cm_active ul {
-        max-width: 1280px;
-        width: 100%;
-        margin: 0 auto;
-        height: 640px;
-        background: url(../images/climate/cmTimeline.png) center center no-repeat;
-        background-size: contain;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-content: space-between;
-    }
-
-    .climateSub .cm_active ul li {
-        max-width: 270px;
-        width: 21%;
-        
-
-    }
+    .climateSub .cm_cause {background-image: url(../images/climate/climatebg01.png);padding-top: 14.2%;padding-bottom : 5%;}
+    .climateSub .cm_cause h2 { margin-left: 11.71%; padding-bottom: 10%;} 
+    .climateSub .cm_cause p {max-width: 840px; width: 65.625%; line-height: 30px;  font-size: 16px; margin-left: 11.71%; padding-bottom: 7%;}
+    .climateSub .cm_active {background-color: black;text-align: center;padding-top: 7.4%;padding-bottom: 150px;}
+    .climateSub .cm_active h2 {margin-bottom: 100px;}
+    .climateSub .cm_active ul {max-width: 1280px;width: 100%;margin: 0 auto;height: 640px;background: url(../images/climate/cmTimeline.png) center center no-repeat;background-size: contain;
+        display: flex;flex-wrap: wrap;flex-direction: row;justify-content: space-evenly;align-content: space-between;}
+    .climateSub .cm_active ul li {max-width: 270px;width: 21%;}
     
     .climateSub .cm_active ul li:first-of-type,
-    .climateSub .cm_active ul li:nth-of-type(2) {margin-left: 270px;}
+    .climateSub .cm_active ul li:nth-of-type(2) {margin-left: 21%;}
 
     .climateSub .cm_active ul li:nth-of-type(3),
-    .climateSub .cm_active ul li:last-of-type {margin-right: 270px;}
+    .climateSub .cm_active ul li:last-of-type {margin-right: 21%;}
 
-    .climateSub .cm_active ul li strong {
-        display: block;
-        margin-bottom: 35px;
+    .climateSub .cm_active ul li strong {display: block;margin-bottom: 35px;}
+
+    .climateSub .cm_sign {background-color: black;padding-bottom: 3%;}
+
+    /* swiper1 */
+    .climateSub .cm_sign .swiper-container {padding-bottom: 6%;}
+    .climateSub .cm_sign .swiper-container .swiper-scrollbar {background-color: white;}
+    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure img {margin-bottom: 7.05%; width: 100%;}  
+    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure figcaption dl {width: 56.51%;}
+    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure figcaption dl dt {margin-bottom: 35%;}
+    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure figcaption dl dd {margin-bottom: 10%;}
+    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure figcaption dl a {color: #70ad46;}
+
+    .climateSub .cm_sign h2 {text-align: center;margin-bottom: 100px;}
+
+    .climateSub .cm_sign .swiper-container .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+        width: 70px;bottom: 0;left: auto; right: 163px;background-color: black;
+        z-index: 100;
+    }
+    .climateSub .cm_challenge {background-image: url(../images/climate/climatebg02.png);padding: 21.16% 0;display: flex;flex-direction: row;}
+    .climateSub .cm_challenge .navBox {max-width: 390px;width: 20.52%;margin-left: 15.36%;}
+    .climateSub .cm_challenge h2 {font-size: 50px;margin-bottom: 14%;}
+    .climateSub .cm_challenge p {font-size: 16px;}
+    /* swiper2 */
+    .swiper-container01 {margin-left: auto;margin-right: auto;position: relative;overflow: hidden;list-style: none;padding: 0;z-index: 1;}
+    .climateSub .cm_challenge .swiper-container01 {max-width: 1135px;width: 44.73%;height: 300px;margin-right: 0;padding-bottom: 7%;}
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide {background-size: cover;background-repeat: no-repeat;position: relative;}
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide p {position: absolute; bottom: 6%; left: 8%;}
+
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide:first-of-type {background-image: url(../images/climate/cmChllenge01.png);}
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide:nth-of-type(2) {background-image: url(../images/climate/cmChllenge02.png);}
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide:nth-of-type(3) {background-image: url(../images/climate/cmChllenge03.png);}
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide:last-of-type {background-image: url(../images/climate/cmChllenge04.png);}
+
+    .climateSub .cm_challenge .swiper-container01 .swiper-scrollbar{left: 20%;bottom: 5%;width: 59%;background-color: white;border-radius: 0;}
+
+    .climateSub .cm_challenge .swiper-container01 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 4%;width: 10%;left: auto;right: 5%;}
+
+    .climateSub .cm_challenge .swiper-container01 .swiper-button-prev, .swiper-button-next {
+        position: absolute;width: calc(var(--swiper-navigation-size) / 44 * 27);z-index: 10;color: white;
+        top : auto;bottom: 0;
     }
 
-    .climateSub .cm_sign {
-        background-color: black;
-    }
+    .climateSub .cm_challenge .swiper-container01 .swiper-button-next {right: auto;left: 15%;}
 
-    .climateSub .cm_sign h2 {
-        text-align: center;
-        margin-bottom: 100px;
-    }
+    .climateSub .cm_challenge .swiper-container01 .swiper-button-prev:after, .swiper-button-next:after {
+        font-family: swiper-icons;font-size: 16px;text-transform: none;letter-spacing: 0;
+        text-transform: none;line-height: 0;}
 
     /* climate fin */
+
+    .forestSub .forest_cause {padding: 10% 9.47%; background-image: url(../images/forest/forestBg_01.png);}
+    .forestSub .forest_cause .navBox {max-width: 1540px;width: 81.05%;margin: 0 auto;}
+    .forestSub .forest_cause .navBox::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .forestSub .forest_cause .navBox img {width: 50%;float: left;}
+    .forestSub .forest_cause .navBox h2 {float: left;width: 20%;margin: 0 25% 5% 5%; font-size: 45px;}
+    .forestSub .forest_cause .navBox p {width: 45%;float: left;margin-left: 5%;line-height: 26px;font-size: 16px;}
+    .forestSub .forest_bn {background-image: url(../images/forest/forestBg_02.png);text-align: center; padding: 15% 0;}
+    .forestSub .forest_bn p {max-width: 1220px;width: 64.21%;margin: 0 auto 2%;line-height: 22px;}
+    .forestSub .news {background-color: black; padding: 13% 0;}
+    .forestSub .news ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .forestSub .news ul {max-width: 1540px;width: 81.05%;margin: 0 auto;}
+    .forestSub .news ul li {float: left;width: 23.5%;margin-right: 2%;text-align: center;}
+    .forestSub .news ul li:last-of-type {margin-right: 0;}
+    .forestSub .news ul li figure img {margin-bottom: 10%; width:100%;}
+    .forestSub .news ul li figure figcaption dl dt {font-size: 35px;margin-bottom: 10%;}
+    .forestSub .news ul li figure figcaption dl dd {font-size: 16px; line-height: 36px; margin-bottom: 6%;}
+    .forestSub .news ul li figure figcaption dl dd:first-of-type {color: #8c8c8c;}
+    .forestSub .news ul li:last-of-type figure figcaption dl dd:first-of-type {color: white}
+    .forestSub .forestSign {background-image: url(../images/forest/forestBg_03.png); text-align: center;padding: 15% 0;}
+    .forestSub .forestSign p {max-width: 890px;width: 46.84%;margin: 0 auto;font-size: 25px;line-height: 36px;margin-bottom: 10%;}
+    .forestSub a {background-color: white;margin: 0 auto;color: #c7c7c7;}
+    .forestSub a:hover {background-color: #e1561c;border-radius: 10px;}
+    
     /* forest fin */
+
+    .lifeSub section.firstBanner {padding-bottom: 14%;clip-path: polygon(0% 0%,100% 0%,100% 85%,60% 85%,50% 100%,40% 85%,0% 85%);}
+    .lifeSub section.lifeAbout::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .lifeSub section.lifeAbout {max-width: 1100px;width: 57.89%;margin: 6% auto 12%;}
+    .lifeSub section.lifeAbout h2 {font-size: 80px;text-align: center;margin-bottom: 8.3%;}
+    .lifeSub section.lifeAbout span {display: block;border-top: 5px solid #e48b0d;max-width: 430px;width: 39.09%;margin: 0 auto 9.72%;}
+    .lifeSub section.lifeAbout p{width: 48%;padding-right: 2%;float: left;font-size: 20px;color: #5b5b5b;line-height: 30px;}
+    .lifeSub section.lifeSign {padding: 20% 0;margin: 10% 0;background-image: url(../images/life/lifebg01.png);position: relative;}
+    .lifeSub section.lifeSign div.diamondBox {
+        width: 35.73%;margin: 0 auto;background-image: url(../images/life/life_bg.png);text-align: center;position: absolute;
+        left: 22%;padding: 19% 10%;top: -32%;background-repeat: no-repeat;background-position: center;color: white;}
+    .lifeSub section.lifeSign div.diamondBox h3 {font-size: 35px;padding: 15% 0 3%;}
+    .lifeSub section.lifeSign div.diamondBox p{line-height: 30px;margin-bottom: 5%;} 
+    .lifeSub section.lifeSign div.diamondBox span {display: block;margin-bottom: 5%;}
+    .lifeSub section.lifeSign div.diamondBox a {
+        display: block;background-color: #e48b0d;clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);width: 18.73%;
+        padding: 6% 0;margin: 0 auto;}
+    .lifeSub section.challenge02 {background-image: url(../images/life/lifebg02.png);color: white;}
+    .lifeSub section.challenge02 h2 {font-size: 60px;padding-top: 10.74%;margin-bottom: 6.96%;}
+    .lifeSub section.challenge02 ul li:first-of-type {background-image: url(../images/life/life_challge01.png);}
+    .lifeSub section.challenge02 ul li:nth-of-type(2) {background-image: url(../images/life/life_challge02.png); margin-top: 10%;}
+    .lifeSub section.challenge02 ul li:last-of-type {background-image: url(../images/life/life_challge03.png);}
+    .lifeSub section.timeline {max-width: 1100px;width: 57.89%;margin: 0 auto;}
+    .lifeSub section.timeline h2 {font-size: 80px;text-align: center;margin-bottom: 6%;}
+    .lifeSub section.timeline ul {max-width: 950px;width: 86.36%;margin: 0 auto 15.74%;color: #454545;}
+    .lifeSub section.timeline ul li{padding: 4% 0;border-bottom: 5px solid #eee;display: flex;flex-direction: row;}
+    .lifeSub section.timeline ul li h3 {max-width: 85px;width: 8.94%;font-size: 70px;line-height: 48px;}
+    .lifeSub section.timeline ul li h3 small {font-size: 30px;}
+    .lifeSub section.timeline ul li mark {
+        background-color: transparent;font-style: normal;color: #e48b0d;font-size: 25px;width: 46.31%;display: block;
+        padding-left: 4%;padding-top: 4%;
+    }
+    .lifeSub section.timeline ul li p {font-size: 16px;line-height: 28px;width: 44.75%;}
+    .lifeSub section.timeline ul li:nth-of-type(2) {flex-direction: row-reverse;}
+
     /* life fin */
+
+    .plasticSub #plastic {position: relative;}
+    .plasticSub #plastic iframe {position: absolute;width: 100%;height: 100vh;left: 0;top: 0;}
+    .plasticSub section.pt_about {padding: 3%;background-image: url(../images/plastic/plasticbg01.png);}
+    .plasticSub section.pt_about div::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .plasticSub section.pt_about div {max-width: 1728px;width: 90.94%;margin: 0 auto;padding : 12%  5%;background-color: white;}
+    .plasticSub section.pt_about div h2 {font-size: 55px;text-align: center;margin-bottom: 18.98%;}
+    .plasticSub section.pt_about div p {float: left;width: 48%;padding-right: 2%;line-height: 30px;}
+    .plasticSub section.pt_know {background-image: url(../images/plastic/plasticbg02.png);padding: 7% 7% 39%;color: white;text-shadow: 5px 5px 10px black;}
+    .plasticSub section.pt_know::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .plasticSub section.pt_know h2 {font-size: 90px;float: left;width: 40%;padding-right: 10%;}
+    .plasticSub section.pt_know p {float: left;font-size: 26px;line-height: 30px;width: 44%;}
+    .plasticSub section.pt_challenge {max-width: 1800px;width: 94.73%;margin: 0 auto;text-align: center;padding-bottom: 12%;}
+    .plasticSub section.pt_challenge h2 {font-size: 48px;padding-top: 12.5%;margin-bottom: 1.8%;}
+    .plasticSub section.pt_challenge > p {max-width: 290px;width: 16.1%;margin: 0 auto;margin-bottom: 6%;}
+    .plasticSub section.pt_challenge ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .plasticSub section.pt_challenge ul li {width: 25%; float: left;}
+    .plasticSub section.pt_challenge ul li span{display: block;clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); padding: 20% 0;
+        background-color: #484848;margin-bottom: 4.16%;
+    }
+    .plasticSub section.pt_challenge ul li span:hover {background-color: #b7daf6;}
+    .plasticSub section.pt_sign {background-image: url(../images/plastic/plasticbg03.png);padding: 27%;position: relative;}
+    .plasticSub section.pt_sign div.signBox {background-color: white;width: 21.6%;padding: 2%;position: absolute;left: 22%;top: 27%;}
+
     /* plastic fin */
 
-    .oceanSub .pollution {
-        background-image: url(../images/ocean/oceanbg01.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        padding: 150px 0 15%;
-
-    }
-
+    .oceanSub .pollution {background-image: url(../images/ocean/oceanbg01.png);background-repeat: no-repeat;background-size: cover;color: white;padding: 150px 0 15%;}
     .oceanSub .pollution h2,
-    .oceanSub .challenge h2 {
-        font-size: 60px;
-        font-weight: 900;
-        text-align: center;
-        text-shadow: 0px 0px 20px white;
-        margin-bottom: 70px;
-    }
+    .oceanSub .challenge h2 {font-size: 60px;font-weight: 900;text-align: center;text-shadow: 0px 0px 20px white;margin-bottom: 70px;}
     .oceanSub .pollution .innerBox::after {content: ''; display: block; visibility: hidden; clear: both;}
-    .oceanSub .pollution .innerBox {
-        max-width: 1400px;
-        width: 73.68%;
-        margin: 0 auto;
-        background-image: url(../images/ocean/pollution_img01.png);
-        background-position: left top;
-        background-repeat: no-repeat;
-    }
-
-    .oceanSub .pollution .innerBox p {
-        max-width: 700px;
-        width: 50%;
-        float: right;
-        padding-right: 5%;
-        line-height: 30px;
-        margin-bottom: 45px;
-    }
-
+    .oceanSub .pollution .innerBox {max-width: 1400px;width: 73.68%;margin: 0 auto;position: relative;}
+    .oceanSub .pollution .innerBox > img {width: 50%;float: left;}
+    .oceanSub .pollution .innerBox p {max-width: 700px;width: 48%;float: right;line-height: 30px;margin-bottom: 45px;}
     .oceanSub .pollution .innerBox p:last-of-type {margin-bottom: 185px;}
-
     .oceanSub .pollution .innerBox ul::after {content: ''; display: block; visibility: hidden; clear: both;}
-    .oceanSub .pollution .innerBox ul {
-        float: right;
-        max-width: 1000px;
-        width: 71.42%;
-    }
-    .oceanSub .pollution .innerBox ul li {
-        float: left;
-        max-width: 310px;
-        width: 31%;
-        margin-right: 3.5%;
-    }
-
+    .oceanSub .pollution .innerBox ul {max-width: 1000px;width: 71.42%;position: absolute;right: 0;bottom: 0;}
+    .oceanSub .pollution .innerBox ul li {float: left;max-width: 310px;width: 31%;margin-right: 3.5%;}
+    .oceanSub .pollution .innerBox ul li > img {width: 100%;}
     .oceanSub .pollution .innerBox ul li:last-of-type {margin-right: 0;}
-
-    .oceanSub .scarySea {
-        background-color: #011a32;
-        padding: 10.18% 10.52% 12.51%;
-    }
-
+    .oceanSub .scarySea {background-color: #011a32;padding: 10.18% 10.52% 12.51%;}
     .oceanSub .scarySea::after {content: ''; display: block; visibility: hidden; clear: both;}
-
-    .oceanSub .scarySea div {
-        width: 29.33%;
-        text-align: right;
-        padding-right: 2%;
-        float: left;
-    }
-
-    .oceanSub .scarySea div h2 {
-        font-weight: 900;
-        color: white;
-        font-size: 80px;
-        padding-top: 60px;
-        padding-left: 45%;
-        margin-bottom: 60px;
-    }
-
-    .oceanSub .scarySea div p {
-        font-weight: 400;
-        color: #a9a9a9;
-        font-size: 22px;
-        line-height: 27px;
-    }
-
-    .oceanSub .scarySea iframe {
-        width: 1020px;
-        height: 600px;
-    }
-
-    .oceanSub .challenge {
-        background-color: #011a32;
-        color: white;
-
-    }
-
-    .oceanSub .challenge div {
-        background-image: url(../images/ocean/challngebg.png);
-        background-repeat: no-repeat;
-        padding: 100px 0;
-        
-    }
-
-    .oceanSub .challenge div ul {
-        max-width: 1400px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-
-    }
-
+    .oceanSub .scarySea div {width: 29.33%;text-align: right;padding-right: 2%;float: left;}
+    .oceanSub .scarySea div h2 {color: white;font-size: 80px;padding-top: 60px;padding-left: 45%;margin-bottom: 60px;}
+    .oceanSub .scarySea div p {color: #a9a9a9;font-size: 22px;line-height: 27px;}
+    .oceanSub .scarySea iframe {width: 68%;height: 600px}
+    .oceanSub .challenge {background-color: #011a32;color: white;}
+    .oceanSub .challenge div {background-image: url(../images/ocean/challngebg.png);background-repeat: no-repeat;padding: 100px 0;}
+    .oceanSub .challenge div ul {max-width: 1400px;width: 100%;margin: 0 auto;text-align: center;}
     .oceanSub .challenge div ul::after {content: ''; display: block; visibility: hidden; clear: both;}
-
     /*sprite*/
-    .oceanSub .challenge div ul li {width: 18.5%;line-height: 30px;padding: 0 10px;float: left;}
+    .oceanSub .challenge div ul li {width: 18%;line-height: 30px;padding: 0 10px;float: left;}
     .oceanSub .challenge div ul li strong {display: block;width: 200px;line-height: 20px;margin: 30px auto;}
     .oceanSub .challenge div ul li strong::before {content: '';display: block;width: 120px;height: 120px;margin: 0 auto;}
 
@@ -279,130 +316,405 @@
     .oceanSub .challenge div ul li:last-of-type strong::before{background-position: -480px 0;}
 
     
-
-    .oceanSub .sign {
-        background-image: url(../images/ocean/oceanbg04.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 380px;
-        padding-bottom: 70px;
-    }
-
-    .sign figure {
-        max-width: 1100px;
-        width: 57.89%;
-        margin: 0 auto;
-        position: relative;
-    }
-    .sign figure figcaption {
-        max-width: 480px;
-        padding: 140px 160px 60px 70px;
-        border: 10px solid #011a32;
-        position: absolute;
-        right: 3%;
-        top: 16%;
-    }
-/*
+    .arcticSub .sign {margin-bottom: 20%;}
     
-
-    .sign figure figcaption h3 {
-        width: 250px;
-        font-size: 35px;
-        font-weight: 300;
-        line-height: 60px;
-        margin-bottom: 125px;
-    }
-
-    .sign figure figcaption span {
-        display: block;
-        color: #c6c6c6;
-        font-size: 18px;
-        font-weight: 900;
-        margin-bottom: 60px;
-    }
-
-    .sign figure figcaption a {
-        display: inline-block;
-        background-color: #011a32;
-        padding: 15px 20px;
-    }
-
-*/
+    .oceanSub .sign {background-image: url(../images/ocean/oceanbg04.png);padding-top: 380px;padding-bottom: 70px;}
+    .sign figure::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .sign figure {max-width: 1100px;width: 57.89%;margin: 0 auto;position: relative;}
+    .sign figure img {width: 50%;float: left;}
+    .sign figure div {width: 46%;margin: 3% 4% 3% 0;float: left;background-color: white;padding: 29% 0;color: white;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox{padding: 23.63% 0 9% 7%;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox,
+    .sign figure figcaption {border: 10px solid #011a32;}
+    .sign figure figcaption {position: absolute;right: 13%;top: 12%;padding-right: 10%;padding-left: 5%;}
+    .sign figure figcaption dl {max-width: 260px;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox h3 {margin-bottom: 28.18%;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox h3,
+    .sign figure figcaption dl dt {font-size: 35px;}
+    .sign figure figcaption dl dt {width: 350px;margin-bottom: 55%;margin-top: 47%;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox span{display: block;margin-bottom: 12%;}
+    .sign figure figcaption dl dd {margin-bottom: 20%;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox a,
+    .sign figure figcaption dl a {border: 4px solid #011a32;color: #011a32;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox a:hover,
+    .sign figure figcaption dl a:hover {background-color: #011a32;color: white;}
+    .sign figure figcaption dl a { margin-bottom: 20%;}
 
     /* ocean fin */
 
-    .arcticSub .firstBanner{
-        clip-path: polygon(0% 0%,100% 0%,100% 80%,50% 100%,0% 80%);
-        padding-bottom: 380px;
-
-    }
-
-    .arcticSub section:not(:first-child) h2 {
-        font-size: 50px;
-        font-weight: 500;
-        max-width: 530px;
-        width: 41.40%;
-        margin: 0 auto 105px;
-    }
-
-    .arcticSub .aboutNorth::before {
-        content: '';
-        display: block;
-        width: 5px;
-        height: 135px;
-        background-color: #28353e;
-        margin: 0 auto 8%;
-    }
-
+    .arcticSub .firstBanner{clip-path: polygon(0% 0%,100% 0%,100% 80%,50% 100%,0% 80%); padding-bottom: 380px;}
+    .arcticSub section:not(:first-child) h2,
+    .arcticSub div.background section h2 {font-size: 50px;max-width: 530px;min-width: 510px;width: 41.40%; margin: 0 auto 105px;}
+    .arcticSub .aboutNorth::before {content: '';display: block;width: 5px;height: 135px;background-color: #28353e;margin: 0 auto 8%;}
     .arcticSub .aboutNorth::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .arcticSub .aboutNorth {max-width: 1280px;width: 67.36%;margin: 0 auto 105px;}
+    .arcticSub .aboutNorth p {width: 49%;line-height: 36px;padding-right: 1%;margin-bottom: 35px;float: left;}
+    .arcticSub .background {background-image: url(../images/arctic/arcticsub_bg.png);background-repeat: no-repeat;background-size: cover;background-position: top center;}
+    .arcticSub .background .activities {max-width: 1280px;width: 67.36%;margin: 0 auto 20%;padding-top: 330px;color: white;}
+    .arcticSub .background .activities img {max-width: 990px;width: 78.34%;margin: 0 auto;display: block;}
+    .challenge02 {text-align: center;padding-bottom: 10%;}
+    .challenge02 ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .challenge02 ul { max-width: 1000px;width: 63.15%;margin: 0 auto;}
+    .challenge02 ul li {max-width: 380px;width: 32%;padding: 36% 0 6%;margin-right: 1%;float: left;position: relative;
+        background-repeat: no-repeat;background-size: cover;}
+    .challenge02 ul li::after {
+        content: '';display: block;width: 100%;height: 100%;
+        position: absolute;left: 0;top: 0;background-color: rgba(0, 0, 0, 0.5);}
 
-    .arcticSub .aboutNorth {
-        max-width: 1280px;
-        width: 67.36%;
-        margin: 0 auto 105px;
-       
+    .arcticSub div.background .challenge02 ul li:first-child {background-image: url(../images/arctic/arctic_challenge01.png);}
+    .arcticSub div.background .challenge02 ul li:nth-child(2) {background-image: url(../images/arctic/arctic_challenge02.png); margin-top: 10%;}
+    .arcticSub div.background .challenge02 ul li:last-child {background-image: url(../images/arctic/arctic_challenge03.png);}
+
+    /* arctic fin */
+}
+
+@media screen and (min-width:1280px){
+    
+    div > .firstBanner {padding:0 16.31% 6%; 
+        animation-name: iWanChuBack;
+        animation-duration: 1.5s;
+    }
+    @keyframes iWanChuBack {
+        0% {opacity: 1;}
+        50% {opacity: 1;transform: scale3d(0.1, 0.1, 0.1);}
+        to {opacity: 1;}
+      }
+    .firstBanner h2 {padding-top: 32%;padding-bottom: 20%;font-size: 85px;text-align: center;line-height: 40px; color: white;}
+    .firstBanner h2 small {width: 100%; display: inline-block; font-size: 14px;}
+    .firstBanner span {display: block;text-indent: -9999px;max-width: 40px;margin: 0 auto;}
+    .firstBanner span:first-of-type{background-position:-280px -120px; padding-bottom: 44px;}
+    .firstBanner span:last-of-type {background-position:-485px -120px; padding-bottom: 20px;
+        animation-name: down;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        transform-style:preserve-3d;
     }
 
-    .arcticSub .aboutNorth p {
-        width: 49%;
-        line-height: 36px;
-        padding-right: 1%;
-        margin-bottom: 35px;
-        float: left;
-        font-weight: 400;
-        
+    @keyframes down {
+        from{
+               transform:translateY(0);
+        }
+        to{
+               transform:translateY(10px);
+        }
     }
 
-    .arcticSub .background {
-        background-image: url(../images/arctic/arcticsub_bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top center;
+    /* .firstBanner 공통 */
+    .scrollUp {transform: translateY(50%);}
+    .scrollUp.animate {transform: translateY(0);}
+    .animate {
+        animation: fadeIn 1s forwards ease-in;
+        transition: 1s ease-in-out;
+    }
+    @keyframes fadeIn{
+        0% {opacity: 0;}
+        100%{opacity: 1;}
     }
 
-    .arcticSub .background .activities {
-        max-width: 1280px;
-        width: 67.36%;
-        margin: 0 auto;
-        padding-top: 330px;
-        color: white;
+    /* slide scroll event */
 
+    .aboutSub section:not(:first-of-type) {padding: 0 10.52%;}
+    .aboutSub #aboutUs {overflow: hidden;}
+    .aboutSub #aboutUs div {max-width: 1500px;width: 78.94%;margin: 0 auto;padding:18% 0 16% 9%; background-image: url(../images/about/aboutbg01.png);background-repeat: no-repeat;background-size: 600px 850px;background-position: right;}
+    .aboutSub #aboutUs div h2 {font-size: 85px;font-weight: 400;color: #377308;padding-bottom: 55px;}
+    
+    .aboutSub #aboutUs div p,
+    .aboutSub #aboutUs div ul li {font-size: 16px;color: #3b3b3b;}
+    .aboutSub #aboutUs div p {max-width: 600px;width: 40%;padding-bottom: 55px;line-height: 28px;}
+    .aboutSub #aboutUs div p strong {display: block;padding-bottom: 55px;}
+
+    .aboutSub #aboutUs div ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .aboutSub #aboutUs div ul {max-width: 570px;width: 38%;}
+    .aboutSub #aboutUs div ul li {float: left; padding-right: 1%;max-width: 180px; width: 30%; }
+    .aboutSub #aboutUs div ul li mark {display: block;font-size: 65px;color: #377308;background-color: unset;font-style: normal;}
+    .aboutSub #vision {background-image: url(../images/about/aboutbg02.png); height: 100vh; display: flex;flex-direction: row;justify-content: space-around;overflow: hidden;}
+    .aboutSub #vision div {max-width: 750px;width: 40%;padding: 19% 8.3% 14.5% 0;}
+    .aboutSub #vision div h2 {font-size: 65px;color: white;padding-bottom: 90px;}
+    .aboutSub #vision div p {font-size: 18px; color: white;padding-bottom: 50px;padding-right: 100px;}
+    .aboutSub #vision ul {max-width: 375px;width: 23%;
+        animation-name: up;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        transform-style:preserve-3d;
     }
 
-    .arcticSub .background .activities img {
-        max-width: 990px;
-        width: 78.34%;
-        margin: 0 auto;
-        display: block;
+    @keyframes up {
+        from{
+            transform: translateY(0);
+        }to{
+            transform: translateY(100%);
+        }
     }
 
+    .aboutSub #vision ul:first-of-type {animation-delay: 2s;}
+    .aboutSub #vision ul li {margin-bottom: 4%;}
+    .aboutSub #vision ul li img {width: 100%;}
 
+    .aboutSub #wedo {background-image: url(../images/about/aboutbg03.png);background-repeat: no-repeat;background-position: top right;background-size: 1400px 750px;padding-right: 0;}
+    .aboutSub #wedo h2{padding-top: 515px;padding-bottom :60px;font-size: 65px;font-weight: 900;color: #3e3e3e;}
+    .aboutSub #wedo p {max-width: 540px;width: 36%;font-size: 19px;color: black;line-height: 30px;padding-bottom: 200px;}
 
+    .aboutSub #organisation {background-image: url(../images/about/aboutbg04.png);color: white;}
+    .aboutSub #organisation div {padding: 180px 6.7%;}
+    .aboutSub #organisation div h2 {font-size: 70px;margin-bottom: 90px;}
+    .aboutSub #organisation > div > span {display: block;text-transform: uppercase;font-size: 20px;padding: 5px 0;}
+    .aboutSub #organisation > div > span:last-of-type {margin-bottom: 90px;}
+    .aboutSub #organisation div ul {max-width: 1300px;width: 100%;}
+    .aboutSub #organisation div ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+    .aboutSub #organisation div ul li {float: left;max-width: 312px;width: 24%;padding-right: 1%;line-height: 18px;}
+    .aboutSub #organisation div ul li span {display: block;width: 100%;border: 3px solid white;border-bottom: none;text-indent: -9999px;}
+    .aboutSub #organisation div ul li strong {display: block;font-size: 27px; margin-bottom: 30px;}
+    .aboutSub #organisation div ul li strong::before {content: '';display: block;width: 70px;height: 60px; margin-bottom: 30px;}
+    .aboutSub #organisation div ul li:first-child strong::before {background-position: 0 -120px;}
+    .aboutSub #organisation div ul li:nth-child(2) strong::before {background-position: -70px -120px;}
+    .aboutSub #organisation div ul li:nth-child(3) strong::before {background-position: -140px -120px;}
+    .aboutSub #organisation div ul li:last-child strong::before {background-position: -210px -120px;}
 
+    /* about fin */
 
+    .climateSub section {color: white;}
+    .climateSub section:not(:last-of-type) {padding-left : 16.31%; padding-right : 16.31%;}
+    .climateSub section:not(:last-of-type) h2 {font-size: 65px;}
+    .climateSub .cm_cause {background-image: url(../images/climate/climatebg01.png);padding-top: 14.2%;padding-bottom : 5%;}
+    .climateSub .cm_cause h2 { margin-left: 11.71%; padding-bottom: 10%;} 
+    .climateSub .cm_cause p {max-width: 840px; width: 65.625%; line-height: 36px;  font-size: 20px; margin-left: 11.71%; padding-bottom: 7%;}
+    .climateSub .cm_active {background-color: black;text-align: center;padding-top: 7.4%;padding-bottom: 150px;}
+    .climateSub .cm_active h2 {margin-bottom: 100px;}
+    .climateSub .cm_active ul {max-width: 1280px;width: 100%;margin: 0 auto;height: 640px;background: url(../images/climate/cmTimeline.png) center center no-repeat;background-size: contain;
+        display: flex;flex-wrap: wrap;flex-direction: row;justify-content: space-evenly;align-content: space-between;}
+    .climateSub .cm_active ul li {max-width: 270px;width: 21%;}
+    
+    .climateSub .cm_active ul li:first-of-type,
+    .climateSub .cm_active ul li:nth-of-type(2) {margin-left: 21%;}
 
+    .climateSub .cm_active ul li:nth-of-type(3),
+    .climateSub .cm_active ul li:last-of-type {margin-right: 21%;}
+
+    .climateSub .cm_active ul li strong {display: block;margin-bottom: 35px;}
+
+    .climateSub .cm_sign {background-color: black;padding-bottom: 3%;}
+
+    /* swiper1 */
+    .climateSub .cm_sign .swiper-container {padding-bottom: 6%;}
+    .climateSub .cm_sign .swiper-container .swiper-scrollbar {background-color: white;}
+    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure img {margin-bottom: 7.05%;}  
+    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure figcaption dl {width: 56.51%;}
+    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure figcaption dl dt {margin-bottom: 35%;}
+    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure figcaption dl dd {margin-bottom: 10%;}
+    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure figcaption dl a {color: #70ad46;}
+
+    .climateSub .cm_sign h2 {text-align: center;margin-bottom: 100px;}
+
+    .climateSub .cm_sign .swiper-container .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+        width: 70px;bottom: 0;left: auto; right: 163px;background-color: black;
+        z-index: 100;
+    }
+    .climateSub .cm_challenge {background-image: url(../images/climate/climatebg02.png);padding: 21.16% 0;display: flex;flex-direction: row;}
+    .climateSub .cm_challenge .navBox {max-width: 390px;width: 20.52%;margin-left: 15.36%;}
+    .climateSub .cm_challenge h2 {font-size: 70px;margin-bottom: 14%;}
+    .climateSub .cm_challenge p {font-size: 17px;padding-right: 28%;}
+    /* swiper2 */
+    .swiper-container01 {margin-left: auto;margin-right: auto;position: relative;overflow: hidden;list-style: none;padding: 0;z-index: 1;}
+    .climateSub .cm_challenge .swiper-container01 {max-width: 1135px;width: 44.73%;height: 300px;margin-right: 0;padding-bottom: 3%;}
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide {background-size: cover;background-repeat: no-repeat;position: relative;}
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide p {position: absolute; bottom: 6%; left: 8%;}
+
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide:first-of-type {background-image: url(../images/climate/cmChllenge01.png);}
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide:nth-of-type(2) {background-image: url(../images/climate/cmChllenge02.png);}
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide:nth-of-type(3) {background-image: url(../images/climate/cmChllenge03.png);}
+    .climateSub .cm_challenge .swiper-container01 .swiper-wrapper .swiper-slide:last-of-type {background-image: url(../images/climate/cmChllenge04.png);}
+
+    .climateSub .cm_challenge .swiper-container01 .swiper-scrollbar{left: 20%;bottom: 5%;width: 66%;background-color: white;border-radius: 0;}
+
+    .climateSub .cm_challenge .swiper-container01 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 4%;width: 7%;left: auto;right: 5%;}
+
+    .climateSub .cm_challenge .swiper-container01 .swiper-button-prev, .swiper-button-next {
+        position: absolute;width: calc(var(--swiper-navigation-size) / 44 * 27);z-index: 10;color: white;
+        top : auto;bottom: 0;
+    }
+
+    .climateSub .cm_challenge .swiper-container01 .swiper-button-next {right: auto;left: 15%;}
+
+    .climateSub .cm_challenge .swiper-container01 .swiper-button-prev:after, .swiper-button-next:after {
+        font-family: swiper-icons;font-size: 16px;text-transform: none;letter-spacing: 0;
+        text-transform: none;line-height: 0;}
+
+    /* climate fin */
+
+    .forestSub .forest_cause {padding: 10% 9.47%; background-image: url(../images/forest/forestBg_01.png);}
+    .forestSub .forest_cause .navBox {max-width: 1540px;width: 81.05%;margin: 0 auto;}
+    .forestSub .forest_cause .navBox::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .forestSub .forest_cause .navBox img {width: 50%;float: left;}
+    .forestSub .forest_cause .navBox h2 {float: left;width: 20%;margin: 0 25% 5% 5%;padding-top: 10%;}
+    .forestSub .forest_cause .navBox p {width: 45%;float: left;margin-left: 5%;line-height: 36px;font-size: 22px;}
+    .forestSub .forest_bn {background-image: url(../images/forest/forestBg_02.png);text-align: center; padding: 15% 0;}
+    .forestSub .forest_bn p {max-width: 1220px;width: 64.21%;margin: 0 auto 2%;line-height: 22px;}
+    .forestSub .news {background-color: black; padding: 13% 0;}
+    .forestSub .news ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .forestSub .news ul {max-width: 1540px;width: 81.05%;margin: 0 auto;}
+    .forestSub .news ul li {float: left;width: 23.5%;margin-right: 2%;text-align: center;}
+    .forestSub .news ul li:last-of-type {margin-right: 0;}
+    .forestSub .news ul li figure img {margin-bottom: 10%; width: 100%;}
+    .forestSub .news ul li figure figcaption dl dt {font-size: 35px;margin-bottom: 10%;}
+    .forestSub .news ul li figure figcaption dl dd {font-size: 20px; line-height: 36px; margin-bottom: 6%;}
+    .forestSub .news ul li figure figcaption dl dd:first-of-type {color: #8c8c8c;}
+    .forestSub .news ul li:last-of-type figure figcaption dl dd:first-of-type {color: white}
+    .forestSub .forestSign {background-image: url(../images/forest/forestBg_03.png); text-align: center;padding: 15% 0;}
+    .forestSub .forestSign p {max-width: 890px;width: 46.84%;margin: 0 auto;font-size: 25px;line-height: 36px;margin-bottom: 10%;}
+    .forestSub a {background-color: white;margin: 0 auto;color: #c7c7c7;}
+    .forestSub a:hover {background-color: #e1561c;border-radius: 10px;}
+    
+    /* forest fin */
+
+    .lifeSub section.firstBanner {padding-bottom: 14%;clip-path: polygon(0% 0%,100% 0%,100% 85%,60% 85%,50% 100%,40% 85%,0% 85%);}
+    .lifeSub section.lifeAbout::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .lifeSub section.lifeAbout {max-width: 1100px;width: 57.89%;margin: 6% auto 12%;}
+    .lifeSub section.lifeAbout h2 {font-size: 80px;text-align: center;margin-bottom: 8.3%;}
+    .lifeSub section.lifeAbout span {display: block;border-top: 5px solid #e48b0d;max-width: 430px;width: 39.09%;margin: 0 auto 9.72%;}
+    .lifeSub section.lifeAbout p{width: 48%;padding-right: 2%;float: left;font-size: 20px;color: #5b5b5b;line-height: 30px;}
+    .lifeSub section.lifeSign {padding: 20% 0;margin: 10% 0;background-image: url(../images/life/lifebg01.png);position: relative;}
+    .lifeSub section.lifeSign div.diamondBox {
+        width: 35.73%;margin: 0 auto;background-image: url(../images/life/life_bg.png);text-align: center;position: absolute;
+        left: 22%;padding: 19% 10%;top: -32%;background-repeat: no-repeat;background-position: center;color: white;}
+    .lifeSub section.lifeSign div.diamondBox h3 {font-size: 35px;padding: 15% 0 3%;}
+    .lifeSub section.lifeSign div.diamondBox p{line-height: 30px;margin-bottom: 5%;} 
+    .lifeSub section.lifeSign div.diamondBox span {display: block;margin-bottom: 5%;}
+    .lifeSub section.lifeSign div.diamondBox a {
+        display: block;background-color: #e48b0d;clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);width: 18.73%;
+        padding: 6% 0;margin: 0 auto;}
+    .lifeSub section.challenge02 {background-image: url(../images/life/lifebg02.png);color: white;}
+    .lifeSub section.challenge02 h2 {font-size: 60px;padding-top: 10.74%;margin-bottom: 6.96%;}
+    .lifeSub section.challenge02 ul li:first-of-type {background-image: url(../images/life/life_challge01.png);}
+    .lifeSub section.challenge02 ul li:nth-of-type(2) {background-image: url(../images/life/life_challge02.png); margin-top: 10%;}
+    .lifeSub section.challenge02 ul li:last-of-type {background-image: url(../images/life/life_challge03.png);}
+    .lifeSub section.timeline {max-width: 1100px;width: 57.89%;margin: 0 auto;}
+    .lifeSub section.timeline h2 {font-size: 80px;text-align: center;margin-bottom: 6%;}
+    .lifeSub section.timeline ul {max-width: 950px;width: 86.36%;margin: 0 auto 15.74%;color: #454545;}
+    .lifeSub section.timeline ul li{padding: 4% 0;border-bottom: 5px solid #eee;display: flex;flex-direction: row;}
+    .lifeSub section.timeline ul li h3 {max-width: 85px;width: 8.94%;font-size: 70px;line-height: 48px;}
+    .lifeSub section.timeline ul li h3 small {font-size: 30px;}
+    .lifeSub section.timeline ul li mark {
+        background-color: transparent;font-style: normal;color: #e48b0d;font-size: 25px;width: 46.31%;display: block;
+        padding-left: 4%;padding-top: 4%;
+    }
+    .lifeSub section.timeline ul li p {font-size: 16px;line-height: 28px;width: 44.75%;}
+    .lifeSub section.timeline ul li:nth-of-type(2) {flex-direction: row-reverse;}
+
+    /* life fin */
+
+    .plasticSub #plastic {position: relative;}
+    .plasticSub #plastic iframe {position: absolute;width: 100%;height: 100vh;left: 0;top: 0;}
+    .plasticSub section.pt_about {padding: 3%;background-image: url(../images/plastic/plasticbg01.png);}
+    .plasticSub section.pt_about div::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .plasticSub section.pt_about div {max-width: 1728px;width: 90.94%;margin: 0 auto;padding : 12%  5%;background-color: white;}
+    .plasticSub section.pt_about div h2 {font-size: 55px;text-align: center;margin-bottom: 18.98%;}
+    .plasticSub section.pt_about div p {float: left;width: 48%;padding-right: 2%;line-height: 30px;}
+    .plasticSub section.pt_know {background-image: url(../images/plastic/plasticbg02.png);padding: 7% 7% 39%;color: white;text-shadow: 5px 5px 10px black;}
+    .plasticSub section.pt_know::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .plasticSub section.pt_know h2 {font-size: 90px;float: left;width: 40%;padding-right: 10%;}
+    .plasticSub section.pt_know p {float: left;font-size: 26px;line-height: 30px;width: 44%;}
+    .plasticSub section.pt_challenge {max-width: 1800px;width: 94.73%;margin: 0 auto;text-align: center;padding-bottom: 12%;}
+    .plasticSub section.pt_challenge h2 {font-size: 48px;padding-top: 12.5%;margin-bottom: 1.8%;}
+    .plasticSub section.pt_challenge > p {max-width: 290px;width: 16.1%;margin: 0 auto;margin-bottom: 6%;}
+    .plasticSub section.pt_challenge ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .plasticSub section.pt_challenge ul li {width: 25%; float: left;}
+    .plasticSub section.pt_challenge ul li span{display: block;clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); padding: 20% 0;
+        background-color: #484848;margin-bottom: 4.16%;
+    }
+    .plasticSub section.pt_challenge ul li span:hover {background-color: #b7daf6;}
+    .plasticSub section.pt_sign {background-image: url(../images/plastic/plasticbg03.png);padding: 27%;position: relative;}
+    .plasticSub section.pt_sign div.signBox {background-color: white;width: 21.6%;padding: 2%;position: absolute;left: 22%;top: 27%;}
+
+    /* plastic fin */
+
+    .oceanSub .pollution {background-image: url(../images/ocean/oceanbg01.png);background-repeat: no-repeat;background-size: cover;color: white;padding: 150px 0 15%;}
+    .oceanSub .pollution h2,
+    .oceanSub .challenge h2 {font-size: 60px;font-weight: 900;text-align: center;text-shadow: 0px 0px 20px white;margin-bottom: 70px;}
+    .oceanSub .pollution .innerBox::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .oceanSub .pollution .innerBox {max-width: 1400px;width: 73.68%;margin: 0 auto;position: relative;}
+    .oceanSub .pollution .innerBox > img {width: 50%;float: left;}
+    .oceanSub .pollution .innerBox p {max-width: 700px;width: 48%;float: right;line-height: 30px;margin-bottom: 45px;}
+    .oceanSub .pollution .innerBox p:last-of-type {margin-bottom: 185px;}
+    .oceanSub .pollution .innerBox ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .oceanSub .pollution .innerBox ul {max-width: 1000px;width: 71.42%;position: absolute;right: 0;bottom: 0;}
+    .oceanSub .pollution .innerBox ul li {float: left;max-width: 310px;width: 31%;margin-right: 3.5%;}
+    .oceanSub .pollution .innerBox ul li > img {width: 100%;}
+    .oceanSub .pollution .innerBox ul li:last-of-type {margin-right: 0;}
+    .oceanSub .scarySea {background-color: #011a32;padding: 10.18% 10.52% 12.51%;}
+    .oceanSub .scarySea::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .oceanSub .scarySea div {width: 29.33%;text-align: right;padding-right: 2%;float: left;}
+    .oceanSub .scarySea div h2 {color: white;font-size: 80px;padding-top: 60px;padding-left: 45%;margin-bottom: 60px;}
+    .oceanSub .scarySea div p {color: #a9a9a9;font-size: 22px;line-height: 27px;}
+    .oceanSub .scarySea iframe {width: 68%;height: 600px}
+    .oceanSub .challenge {background-color: #011a32;color: white;}
+    .oceanSub .challenge div {background-image: url(../images/ocean/challngebg.png);background-repeat: no-repeat;padding: 100px 0;}
+    .oceanSub .challenge div ul {max-width: 1400px;width: 100%;margin: 0 auto;text-align: center;}
+    .oceanSub .challenge div ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    /*sprite*/
+    .oceanSub .challenge div ul li {width: 18%;line-height: 30px;padding: 0 10px;float: left;}
+    .oceanSub .challenge div ul li strong {display: block;width: 200px;line-height: 20px;margin: 30px auto;}
+    .oceanSub .challenge div ul li strong::before {content: '';display: block;width: 120px;height: 120px;margin: 0 auto;}
+
+    .oceanSub .challenge div ul li:first-of-type strong::before{background-position: 0 0;}
+    .oceanSub .challenge div ul li:nth-of-type(2) strong::before{background-position: -120px 0;}
+    .oceanSub .challenge div ul li:nth-of-type(3) strong::before{background-position: -240px 0;}
+    .oceanSub .challenge div ul li:nth-of-type(4) strong::before{background-position: -360px 0;}
+    .oceanSub .challenge div ul li:last-of-type strong::before{background-position: -480px 0;}
+
+    
+    .arcticSub .sign {margin-bottom: 20%;}
+    
+    .oceanSub .sign {background-image: url(../images/ocean/oceanbg04.png);padding-top: 380px;padding-bottom: 70px;}
+    .sign figure::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .sign figure {max-width: 1100px;width: 57.89%;margin: 0 auto;position: relative;}
+    .sign figure img {width: 50%;float: left;}
+    .sign figure div {width: 46%;margin: 3% 4% 3% 0;float: left;background-color: white;padding: 29% 0;color: white;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox{padding: 23.63% 0 9% 7%;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox,
+    .sign figure figcaption {border: 10px solid #011a32;}
+    .sign figure figcaption {position: absolute;right: 13%;top: 12%;padding-right: 10%;padding-left: 5%;}
+    .sign figure figcaption dl {max-width: 260px;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox h3 {margin-bottom: 28.18%;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox h3,
+    .sign figure figcaption dl dt {font-size: 35px;}
+    .sign figure figcaption dl dt {width: 350px;margin-bottom: 55%;margin-top: 47%;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox span{display: block;margin-bottom: 12%;}
+    .sign figure figcaption dl dd {margin-bottom: 20%;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox a,
+    .sign figure figcaption dl a {border: 4px solid #011a32;color: #011a32;}
+    .plasticSub section.pt_sign > div.signBox div.signInBox a:hover,
+    .sign figure figcaption dl a:hover {background-color: #011a32;color: white;}
+    .sign figure figcaption dl a { margin-bottom: 20%;}
+
+    /* ocean fin */
+
+    .arcticSub .firstBanner{clip-path: polygon(0% 0%,100% 0%,100% 80%,50% 100%,0% 80%); padding-bottom: 380px;}
+    .arcticSub section:not(:first-child) h2,
+    .arcticSub div.background section h2 {font-size: 50px;max-width: 530px;min-width: 510px;width: 41.40%; margin: 0 auto 105px;}
+    .arcticSub .aboutNorth::before {content: '';display: block;width: 5px;height: 135px;background-color: #28353e;margin: 0 auto 8%;}
+    .arcticSub .aboutNorth::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .arcticSub .aboutNorth {max-width: 1280px;width: 67.36%;margin: 0 auto 105px;}
+    .arcticSub .aboutNorth p {width: 49%;line-height: 36px;padding-right: 1%;margin-bottom: 35px;float: left;}
+    .arcticSub .background {background-image: url(../images/arctic/arcticsub_bg.png);background-repeat: no-repeat;background-size: cover;background-position: top center;}
+    .arcticSub .background .activities {max-width: 1280px;width: 67.36%;margin: 0 auto 20%;padding-top: 330px;color: white;}
+    .arcticSub .background .activities img {max-width: 990px;width: 78.34%;margin: 0 auto;display: block;}
+    .challenge02 {text-align: center;padding-bottom: 10%;}
+    .challenge02 ul::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .challenge02 ul { max-width: 1000px;width: 63.15%;margin: 0 auto;}
+    .challenge02 ul li {max-width: 380px;width: 32%;padding: 36% 0 6%;margin-right: 1%;float: left;position: relative;
+        background-repeat: no-repeat;background-size: cover;}
+    .challenge02 ul li::after {
+        content: '';display: block;width: 100%;height: 100%;
+        position: absolute;left: 0;top: 0;background-color: rgba(0, 0, 0, 0.5);}
+
+    .arcticSub div.background .challenge02 ul li:first-child {background-image: url(../images/arctic/arctic_challenge01.png);}
+    .arcticSub div.background .challenge02 ul li:nth-child(2) {background-image: url(../images/arctic/arctic_challenge02.png); margin-top: 10%;}
+    .arcticSub div.background .challenge02 ul li:last-child {background-image: url(../images/arctic/arctic_challenge03.png);}
 
     /* arctic fin */
 
-    
+
 }

@@ -4,18 +4,19 @@ footer div.end::after,
 footer div.end ul::after {content: ''; display: block; visibility: hidden; clear: both;}
 /* after canceler*/
 
-footer {width: 100%; background-color: #191919; padding: 1% 0; line-height: 55px;}
+footer {width: 100%; background-color: #191919; padding: 1% 0; line-height: 55px; float: left;}
 footer div.end {max-width: 1800px; width: 94.73%;margin: 0 auto;}
-footer div.end h2 {max-width: 200px; width: 11.11%; float: left; }
+footer div.end h2 {max-width: 200px; width: 11.11%;  float: left; }
+footer div.end h2 a {display: block;}
 footer div.end ul {width: 88.89%; float: right;}
-footer div.end ul li {float: right; max-width: 55px; width: 3.43%; margin-left: 25px;}
+footer div.end ul li {float: right; max-width: 55px; min-width: 55px; width: 3.43%; margin-left: 25px;}
 footer div.end ul li a {width: 100%; text-indent: -9999px; display: block;}
 footer div.end ul li:nth-child(1) {background-position: -430px -120px;} 
 footer div.end ul li:nth-child(2) {background-position: -375px -120px;}
 footer div.end ul li:nth-child(3) {background-position: -320px -120px;}
 /* footer fin */
 
-header nav > a,
+
 footer div.end ul li,
 .firstBanner span,
 .aboutSub #organisation div ul li strong::before,
@@ -35,23 +36,26 @@ div > .firstBanner h2,
 /* text shadow */
 
 a {text-decoration: none; color: white;}
-.left {padding:18.68% 0 18.68% 13.15%; }
+.left {padding:18.68% 0; }
 .right {text-align: right; padding:18.68% 13.15% 18.68% 0; }
-.center {max-width: 1400px;margin: 0 auto;text-align: center;}
+.center {text-align: center;}
 .Bg {background-repeat: no-repeat;background-position: center;background-size: cover;}
 
+
+.aboutSub #aboutUs div ul li,
 .climateSub .cm_cause p {
     font-family : 'Noto Sans KR';
-    font-weight : 400;
+    font-weight : 300;
 }
 
+header nav,
 .Wrap section p,
 .Wrap #values ul li,
 .aboutSub section p,
-.aboutSub #aboutUs div ul li,
 .aboutSub #aboutUs div ul li mark,
-.aboutSub #wedo p,
-.climateSub .cm_cause h2 {
+
+.climateSub .cm_cause h2,
+.plasticSub section.pt_challenge p {
     font-family : 'Noto Sans KR';
     font-weight : 400;
 }
@@ -60,12 +64,16 @@ a {text-decoration: none; color: white;}
 .Wrap .slide,
 .Wrap section strong,
 .aboutSub #aboutUs div p,
-.aboutSub #organisation div span {
+.aboutSub #organisation div span,
+.aboutSub #organisation div ul li strong,
+.aboutSub #wedo p,
+.plasticSub section.pt_challenge ul,
+.lifeSub section.timeline ul li span small {
     font-family : 'Noto Sans KR';
     font-weight : 500;
 }
 
-header nav,
+
 .Wrap section h2,
 .Wrap section h2 > small,
 .Wrap div.tabWrap div.tabpage ul.userDoller,
@@ -75,52 +83,113 @@ div > .firstBanner h2,
 .aboutSub section h2,
 .oceanSub .pollution,
 .sign dl dt,
-.arcticSub div.background section.challenge ul li {
+section.challenge02 ul li,
+.plasticSub section.pt_challenge h2,
+.plasticSub section.pt_sign div.signBox div.signInBox h3,
+.lifeSub section.challenge02 h2,
+.lifeSub section.timeline h2,
+.lifeSub section.timeline ul li h3 {
     font-family : 'Noto Sans KR';
     font-weight : 900;
 }
-/*
-{
-    font-family: 'Merriweather Sans';
-    font-weight:300;
-}
-*/
+
+.lifeSub section.timeline ul li mark,
+.lifeSub section.timeline ul li p,
+.climateSub .cm_challenge p,
 .oceanSub .scarySea div p,
-.arcticSub section h2 {
+.arcticSub .aboutNorth p{
+    font-family: 'Merriweather Sans';
+    font-weight:400;
+}
+
+
+.arcticSub section h2,
+.lifeSub section.lifeAbout,
+.lifeSub section.lifeAbout div.diamondBox
+ {
     font-family : 'Merriweather Sans';
     font-weight : 500;
 }
 
 .oceanSub .scarySea div h2,
-.sign dl dd~a {
+.sign dl dd~a
+.plasticSub section.pt_sign div.signBox div.signInBox span~a,
+.climateSub .cm_challenge h2
+ {
     font-family : 'Merriweather Sans';
     font-weight : 700;
 }
 
+.forestSub .forest_bn p{
+    font-family : 'Oswald';
+    font-weight : 300;
+}
+
+.forestSub .forest_cause .navBox p,
+.forestSub .forest_bn p,
+.forestSub .news ul li figure figcaption dl,
+.forestSub .forestSign p,
+.forestSub .forestSign a {
+    font-family : 'Oswald';
+    font-weight : 400;
+}
+
+.forestSub section:not(:first-of-type) h2{
+    font-family : 'Oswald';
+    font-weight : 700;
+    font-size: 65px;
+    color: white;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
 .firstBanner h2,
-.Wrap section {
+.Wrap section,
+.forestSub {
     color: white;
 }
 
+.btn_more {
+    text-align: center;
+    display: block;
+    padding: 15px 0.93%;
+    max-width: 120px;
+
+}
 
 
 /* font fin*/
 
-@media screen and (min-width: 1280px){
-    header div{max-width: 1800px; margin: 0 auto; position: relative;}
-    header h1{max-width: 200px;  width: 11.11%;}
-    header nav{position: absolute; right: 0; top: 0;width: 88.89%;}
-    header nav ul{text-align: right; float: right;width: 87.5%;}
-    header nav ul li{display: inline-block;}
-    header nav ul li > a {display: inline-block; line-height: 35px; padding-bottom: 3px;}
-    header nav ul li > a:hover {border-bottom: 3px solid #367c2b;}
+/*@media screen and (max-width: 767px)*/
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    header {line-height: 0;}
+    header div{max-width: 1200px; width: 94.73%; margin: 0 auto;padding: 15px 0;position: relative;}
+    header div::after {content: ''; display: block; visibility: hidden; clear: both;}
+    header h1{max-width: 200px;  width: 20%; float: left;}
+    header h1 a {display: block;}
+    header h1 a img {width: 100%;}
+    header > div nav input[type='checkbox'] {display: none;}
+    header nav{width: 80%;float: right;text-align: right;}
+    header nav label.Mnav {display:block; width: 35px; height:35px; float: right; margin-left: 2%; cursor: pointer; }
+    header nav label.Mnav span {display: block; height:10px; background-color: #367c2b; border-radius: 5px; margin-bottom: 2px; }
+    header div nav label.Mnav + input[type='checkbox']#menuIcon:checked +  a + ul {display: block;} 
+    
+    header nav ul{display: none; width: 100%; height: 100%; background-color: rgba(0,0,0,0.2); position: absolute; top: 0; left: 0;}
+    header nav ul li{display: inline-block;}
+    header nav ul li > a {display: inline-block; line-height: 35px; padding-bottom: 3px; opacity: 0.5; }
+    header nav ul li > a:hover {border-bottom: 3px solid #367c2b;}
+    header nav ul li a.active {opacity: 1; border-bottom: 3px solid #367c2b; transition: all 1s;}
     header nav ul li:not(:first-child){margin-left: 3.57%;}
 
     /*sprite*/
-    header nav > a{float: right; max-width: 50px; width: 2.7%; display: block; padding-top: 10px;
-        margin-left: 8.61%; background-color: rgba(54,124,43,0.6); background-position: -526px -120px; text-indent: -9999px;}
+    header nav > a{max-width: 35px; width: 4%;  display: block; height: 35px;
+        background-image: url(../images/greendonate.png); background-position: center center ; 
+        background-repeat: no-repeat; background-size: cover;  text-indent: 9999px;
+        float: right;
+    }
     
+        
     
     /* header fin */
 
@@ -132,27 +201,181 @@ div > .firstBanner h2,
     .Wrap .slide { color: white; display: inline-block; position: fixed; left: 1.8%; bottom: 41%; z-index: 10; transform: rotate(-90deg);}
     /* slidpager fin*/
 
+    .Wrap section:nth-of-type(n+1):nth-of-type(-n+8) {
+        padding-left: 13.15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;}
     .Wrap section {box-sizing: border-box;position: relative;}
-    .Wrap section div h2 { font-size: 85px; margin-bottom: 1%;}
+    .Wrap section div h2 { font-size: 65px; margin-bottom: 1%; }
     .Wrap section h2 > small {width: 100%; display: inline-block;}
     .Wrap section h2 > small,
     .Wrap section a,
     .Wrap section strong {font-size: 14px;}
-    .Wrap section:not(:last-of-type) strong {display: inline-block; padding-left: 13.15%; padding-bottom: 2%;}
+    .Wrap section:not(:last-of-type) strong {display: inline-block;padding-bottom: 2%;}
     .Wrap section:last-of-type strong {display: inline-block; padding-top: 22.5%;}
-    .Wrap section div a {border-bottom: 2px solid white; padding-right: 20px; background: url(../images/rightarrow.png) right bottom no-repeat;}
+    .Wrap section div.left a,
+    .Wrap section div.right a {display: inline-block;  padding-right: 1%; background: url(../images/mainpage_03.png) right center no-repeat; }
+    .Wrap section div.left a span,
+    .Wrap section div.right a span {display: block;  border-bottom: 1px solid white; position: relative; padding-bottom: 4%;}
+    .Wrap section div.left a span::before,
+    .Wrap section div.right a span::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 1px;
+        background: rgba(255,255,255,0.4);
+    }
+    .Wrap section div.left a span::after,
+    .Wrap section div.right a span::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0px;
+        height: 1px;
+        background: rgba(255,255,255,0.9);
+        transition: all 0.5s;
+    }
+
+    .Wrap section div.left a:hover span::before,
+    .Wrap section div.right a:hover span::before {display: none;}
+
+    .Wrap section div.left a:hover span::after,
+    .Wrap section div.right a:hover span::after {width: 100%;}
+
     /* section 공통 */
 
 
-    .plastic {position: relative;}
+    /* .plastic {position: relative;}
     .plastic iframe {width: 100%; height: 100vh;}
-    .plastic .left {position: absolute; left: 0; top: 0;}
+    .plastic .left {position: absolute; left: 0; top: 0;} */
     /* plastic fin */
 
     
-    .Wrap .value div.center {padding: 245px 0 110px;}
-    .Wrap .value div.center h2 {margin-bottom: 45px;}
-    .Wrap .value div.center p { font-size: 16px; max-width: 550px;width: 39.28%; margin: 0 auto 140px; line-height: 26px;}
+    .Wrap .value div.center {padding: 20% 13% 10% 0%; max-width: 1000px;}
+    .Wrap .value div.center h2 {margin-bottom: 3%;}
+    .Wrap .value div.center p { font-size: 16px; max-width: 550px;width: 70%; margin: 0 auto 5%; line-height: 26px;}
+    .Wrap .value div.center ul {max-width: 1000px; width: 100%; border-top: 1px solid #72a74d;padding: 30px 0;}
+    .Wrap .value div.center ul::after {content: ''; display: block; visibility: hidden; clear: both;  }
+    .Wrap .value div.center ul li {max-width: 350px; width: 24%;float: left; text-align: left; line-height: 26px;padding-right: 1%;}
+    .Wrap .value div.center ul li mark {background-color: #72a74d;display: inline-block; margin-right: 50%; margin-bottom: 20px; padding: 0 5px; font-style: normal;}
+    /* value fin */
+
+    
+    .Wrap .donate::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .Wrap .donate div::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .Wrap .donate div.leftP {max-width: 960px; width:50%; box-sizing: border-box;padding:11.31% 7% 0.14% 13.15%;float: left;}
+    .Wrap .donate div.leftP h2 {font-size: 50px; margin-bottom: 70px;}
+    .Wrap .donate div.leftP p {font-size: 22px; margin-bottom: 30px;}
+    .Wrap .donate div.tabWrap {width: 50%; max-width: 960px; height: 80%;float: left;background-color: #72a74d;}
+    .Wrap .donate div.tabWrap::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .Wrap .donate div.tabWrap ul.tabMenu {max-width: 490px; width: 100%; padding: 5px;margin: 17% auto 40px; color: #72a74d;background-color: white;display: flex;flex-direction: row;flex-wrap: wrap;}
+    /*.Wrap #donate div.tabWrap ul.tabMenu::after {content: ''; display: block; visibility: hidden; clear: both;}*/
+    .Wrap .donate div.tabWrap ul.tabMenu li {max-width: 120px; width: 50%;text-align: center;padding: 35px 60px; cursor: pointer;}
+    .Wrap .donate div.tabWrap ul.tabMenu li.active {color: white; border-radius: 20px; background-color: #72a74d;}
+    .Wrap .donate div.tabWrap div.tabpage {max-width: 470px; width: 100%; padding: 35px 15px;margin: 0 auto 14%; background-color: white; display: none;}
+    .Wrap .donate div.tabWrap div.tabpage.active {display: block;}
+
+    .Wrap .donate div.tabWrap div.tabpage ul.userDoller {width: 100%; max-width: 470px; margin-bottom: 35px;display: flex; flex-direction: row; flex-wrap: wrap;justify-content: space-between;}
+    /*.Wrap #donate div.tabWrap div.tabpage ul.userDoller::after {content: ''; display: block; visibility: hidden; clear: both;}*/
+    .Wrap .donate div.tabWrap div.tabpage ul.userDoller li {max-width: 140px;padding: 30px 40px; text-align: center;background-color: #c3c3c3; color: #595959;font-size: 25px; cursor: pointer;}
+    .Wrap .donate div.tabWrap div.tabpage ul.userDoller li.active {color: white; background-color: #72a74d;}
+    .Wrap .donate div.tabWrap div.tabpage ul.userDoller li:not(:first-child) {margin-left: 45px;}
+    .Wrap .donate div.tabWrap div.tabpage input[type="text"] {width: 100%; text-align: center; padding: 20px 0;border: 3px solid #72a74d; margin-bottom: 35px;}
+    .Wrap .donate div.tabWrap div.tabpage p {color: #595959; text-align: center;font-size: 16px; font-weight: 400; margin-bottom: 35px;}
+    .Wrap .donate div.tabWrap div.tabpage input[type="submit"] {width: 100%; border: 0; color: white;font-size: 30px; padding: 20px; font-weight: 900;background-color: #72a74d;}
+    /* donate fin */
+}
+
+@media screen and (min-width: 1280px){
+    header div{max-width: 1800px; width: 94.73%; margin: 0 auto; position: relative;}
+    header h1{max-width: 200px;  width: 11.11%;}
+    header h1 a {display: block;}
+    header h1 a img {width: 100%;}
+    header > div nav input[type='checkbox'] {display: none;}
+    header nav{position: absolute; right: 0; top: 0;width: 88.89%;}
+    header nav ul{text-align: right; float: right;width: 87.5%;}
+    header nav ul li{display: inline-block;}
+    header nav ul li > a {display: inline-block; line-height: 35px; padding-bottom: 3px; opacity: 0.5; }
+    header nav ul li > a:hover {border-bottom: 3px solid #367c2b;}
+    header nav ul li a.active {opacity: 1; border-bottom: 3px solid #367c2b; transition: all 1s;}
+    header nav ul li:not(:first-child){margin-left: 3.57%;}
+
+    /*sprite*/
+    header nav > a{float: right; max-width: 50px; width: 2.7%; display: block;
+        margin-left: 8.61%; background-color: rgba(54,124,43,0.6); background-image: url(../images/donate.png); background-position: center center ; background-repeat: no-repeat;  text-indent: -9999px;}
+    
+    
+    /* header fin */
+
+    .Wrap .slidPager {max-width: 2px;width: 0.1%;position: fixed;left: 3.15%;top: 41.6%;color: #a7a9ac;z-index: 10;}
+    .Wrap .slidPager .pager li {background-color: #a7a9ac;}
+    .Wrap .slidPager .pager li.active {background-color: #7a7a7b;}
+    .Wrap .slidPager .pager li a {text-indent: -9999px;}
+    .Wrap .slidPager span {display:inline-block; transform: rotate(-90deg);}
+    .Wrap .slide { color: white; display: inline-block; position: fixed; left: 1.8%; bottom: 41%; z-index: 10; transform: rotate(-90deg);}
+    /* slidpager fin*/
+    .Wrap section:nth-of-type(n+1):nth-of-type(-n+8) {
+        padding-left: 13.15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;}
+    .Wrap section {box-sizing: border-box;position: relative;
+        }
+    .Wrap section div h2 { font-size: 85px; margin-bottom: 1%; }
+    .Wrap section h2 > small {width: 100%; display: inline-block;}
+    .Wrap section h2 > small,
+    .Wrap section a,
+    .Wrap section strong {font-size: 14px;}
+    .Wrap section:not(:last-of-type) strong {display: inline-block; padding-bottom: 2%;}
+    .Wrap section:last-of-type strong {display: inline-block; padding-top: 22.5%;}
+    .Wrap section div.left a,
+    .Wrap section div.right a {display: inline-block;  padding-right: 1%; background: url(../images/mainpage_03.png) right center no-repeat; }
+    .Wrap section div.left a span,
+    .Wrap section div.right a span {display: block;  border-bottom: 1px solid white; position: relative; padding-bottom: 4%;}
+    .Wrap section div.left a span::before,
+    .Wrap section div.right a span::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 1px;
+        background: rgba(255,255,255,0.4);
+    }
+    .Wrap section div.left a span::after,
+    .Wrap section div.right a span::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0px;
+        height: 1px;
+        background: rgba(255,255,255,0.9);
+        transition: all 0.5s;
+    }
+
+    .Wrap section div.left a:hover span::before,
+    .Wrap section div.right a:hover span::before {display: none;}
+
+    .Wrap section div.left a:hover span::after,
+    .Wrap section div.right a:hover span::after {width: 100%;}
+
+    /* section 공통 */
+
+
+    /* .plastic {position: relative;}
+    .plastic iframe {width: 100%; height: 100vh;}
+    .plastic .left {position: absolute; left: 0; top: 0;} */
+    /* plastic fin */
+
+    
+    .Wrap .value div.center {padding: 12% 10% 10% 0; max-width: 1400px;}
+    .Wrap .value div.center h2 {margin-bottom: 3%;}
+    .Wrap .value div.center p { font-size: 16px; max-width: 550px;width: 39.28%; margin: 0 auto 5%; line-height: 26px;}
     .Wrap .value div.center ul {max-width: 1400px; width: 100%; border-top: 1px solid #72a74d;padding: 30px 0;}
     .Wrap .value div.center ul::after {content: ''; display: block; visibility: hidden; clear: both;  }
     .Wrap .value div.center ul li {max-width: 350px; width: 24%;float: left; text-align: left; line-height: 26px;padding-right: 1%;}
@@ -161,20 +384,23 @@ div > .firstBanner h2,
 
     
     .Wrap .donate::after {content: ''; display: block; visibility: hidden; clear: both;}
-    .Wrap .donate div.leftP {max-width: 960px; width:50%; box-sizing: border-box;padding:16.31% 7% 0.14% 13.15%;float: left;}
+    .Wrap .donate div::after {content: ''; display: block; visibility: hidden; clear: both;}
+    .Wrap .donate > div {height: 90%;}
+    .Wrap .donate div.leftP {max-width: 960px; width:50%; box-sizing: border-box;padding:11.31% 7% 0.14% 13.15%;float: left;}
     .Wrap .donate div.leftP h2 {font-size: 50px; margin-bottom: 70px;}
     .Wrap .donate div.leftP p {font-size: 22px; margin-bottom: 30px;}
-    .Wrap .donate div.tabWrap {width: 50%; max-width: 960px;float: left;background-color: #72a74d;}
+    .Wrap .donate div.tabWrap {width: 50%; max-width: 960px; height: 100%;float: left;background-color: #72a74d;}
     .Wrap .donate div.tabWrap::after {content: ''; display: block; visibility: hidden; clear: both;}
-    .Wrap .donate div.tabWrap ul.tabMenu {max-width: 490px; width: 100%; padding: 5px;margin: 250px auto 40px; color: #72a74d;background-color: white;display: flex;flex-direction: row;flex-wrap: wrap;}
+    .Wrap .donate div.tabWrap ul.tabMenu {max-width: 490px; width: 100%; padding: 5px;margin: 17% auto 40px; color: #72a74d;background-color: white;display: flex;flex-direction: row;flex-wrap: wrap;}
     /*.Wrap #donate div.tabWrap ul.tabMenu::after {content: ''; display: block; visibility: hidden; clear: both;}*/
-    .Wrap .donate div.tabWrap ul.tabMenu li {max-width: 120px; width: 50%;text-align: center;padding: 35px 60px;}
+    .Wrap .donate div.tabWrap ul.tabMenu li {max-width: 120px; width: 50%;text-align: center;padding: 35px 60px; cursor: pointer;}
     .Wrap .donate div.tabWrap ul.tabMenu li.active {color: white; border-radius: 20px; background-color: #72a74d;}
-    .Wrap .donate div.tabWrap div.tabpage {max-width: 470px; width: 100%; padding: 35px 15px;margin: 0 auto 14%; background-color: white;}
+    .Wrap .donate div.tabWrap div.tabpage {max-width: 470px; width: 100%; padding: 35px 15px;margin: 0 auto 14%; background-color: white; display: none;}
+    .Wrap .donate div.tabWrap div.tabpage.active {display: block;}
 
     .Wrap .donate div.tabWrap div.tabpage ul.userDoller {width: 100%; max-width: 470px; margin-bottom: 35px;display: flex; flex-direction: row; flex-wrap: wrap;justify-content: space-between;}
     /*.Wrap #donate div.tabWrap div.tabpage ul.userDoller::after {content: ''; display: block; visibility: hidden; clear: both;}*/
-    .Wrap .donate div.tabWrap div.tabpage ul.userDoller li {max-width: 140px;padding: 30px 40px; text-align: center;background-color: #c3c3c3; color: #595959;font-size: 25px;}
+    .Wrap .donate div.tabWrap div.tabpage ul.userDoller li {max-width: 140px;padding: 30px 40px; text-align: center;background-color: #c3c3c3; color: #595959;font-size: 25px; cursor: pointer;}
     .Wrap .donate div.tabWrap div.tabpage ul.userDoller li.active {color: white; background-color: #72a74d;}
     .Wrap .donate div.tabWrap div.tabpage ul.userDoller li:not(:first-child) {margin-left: 45px;}
     .Wrap .donate div.tabWrap div.tabpage input[type="text"] {width: 100%; text-align: center; padding: 20px 0;border: 3px solid #72a74d; margin-bottom: 35px;}
