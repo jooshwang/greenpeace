@@ -3,7 +3,8 @@ $(document).ready(function(){
     clickTab();
     navclick();
     loopslide();
-    /*
+
+    scrollEY();    /*
     Swiper();
     SwiperTwo();
 
@@ -70,6 +71,18 @@ function loopslide(){
     });
 }
 
-
+function scrollEY(){
+    $(document).scroll(function(){
+        console.log("scrolltop="+ $(document).scrollTop());
+       
+        var a = $(document).scrollTop() + $(window).height()/2;
+        if(a >= $(".scrollUp").offset().top){
+            $('.scrollUp').addClass('animate');
+        }else{
+            $('.scrollUp').removeClass('animate');
+        }
+    
+    });
+}
 
 
