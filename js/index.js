@@ -73,7 +73,7 @@ function loopslide(){
 
 function scrollEY(){
     $(document).scroll(function(){
-        console.log("scrolltop="+ $(document).scrollTop());
+        // console.log("scrolltop="+ $(document).scrollTop());
        
         var a = $(document).scrollTop() + $(window).height()/2;
         if(a >= $(".scrollUp").offset().top){
