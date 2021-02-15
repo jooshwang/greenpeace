@@ -3,7 +3,7 @@ $(document).ready(function(){
     clickTab();
     navclick();
     loopslide();
-    $('.slider').bxSlider();
+    // $('.slider').bxSlider();
     /*scrollEY();    
     Swiper();
     SwiperTwo();
