@@ -3,7 +3,7 @@ $(document).ready(function(){
     clickTab();
     navclick();
     loopslide();
-    bxslide();
+    $('.slider').bxSlider();
     /*scrollEY();    
     Swiper();
     SwiperTwo();
@@ -71,9 +71,6 @@ function loopslide(){
     });
 }
 
-function bxslide(){
-    $('.slider').bxSlider();
-}
 
 // function scrollEY(){
 //     $(document).scroll(function(){
