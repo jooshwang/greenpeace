@@ -10,7 +10,11 @@
 
   <script>
     $(document).ready(function(){
-      $('.slider').bxSlider();
+      $('.slider').bxSlider({
+            mode: 'vertical',
+            minSlides: 3,
+            // maxSlides: 3
+    });
     });
   </script>
 </head>

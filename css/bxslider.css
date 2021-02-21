@@ -24,16 +24,17 @@
   .bx-viewport {
     /*fix other elements on the page moving (on Chrome)*/
     transform: translatez(0);
+    height: auto;
   }
   /** THEME
   ===================================*/
-  .bx-wrapper {
+  /* .bx-wrapper {
     -moz-box-shadow: 0 0 5px #ccc;
     -webkit-box-shadow: 0 0 5px #ccc;
     box-shadow: 0 0 5px #ccc;
     border: 5px solid #fff;
     background: #fff;
-  }
+  } */
   .bx-wrapper .bx-pager,
   .bx-wrapper .bx-controls-auto {
     position: absolute;
@@ -52,6 +53,7 @@
     z-index: 2000;
   }
   /* PAGER */
+  .bx-wrapper .bx-pager{display: none;}
   .bx-wrapper .bx-pager {
     text-align: center;
     font-size: .85em;

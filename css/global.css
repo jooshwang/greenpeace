@@ -1,4 +1,4 @@
-header{background-color: rgba(0,0,0,0.2);position: fixed; width: 100%; line-height: 85px;z-index: 10;}
+header{background-color: rgba(0,0,0,0.2);position: fixed; width: 100%; line-height: 75px;z-index: 10;}
 
 footer div.end::after,
 footer div.end ul::after {content: ''; display: block; visibility: hidden; clear: both;}
