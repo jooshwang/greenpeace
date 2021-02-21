@@ -858,7 +858,7 @@
     /* swiper1 */
     .climateSub .cm_sign .swiper-container {padding-bottom: 6%;}
     .climateSub .cm_sign .swiper-container .swiper-scrollbar {background-color: white;}
-    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure img {margin-bottom: 7.05%;}  
+    .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure img {margin-bottom: 7.05%; width: 100%;}  
     .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure figcaption dl {width: 56.51%;}
     .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure figcaption dl dt {margin-bottom: 35%;}
     .climateSub .cm_sign .swiper-container .swiper-wrapper .swiper-slide figure figcaption dl dd {margin-bottom: 10%;}
