@@ -789,7 +789,7 @@
     .aboutSub #aboutUs div ul li {float: left; padding-right: 1%;max-width: 180px; width: 30%; }
     .aboutSub #aboutUs div ul li mark {display: block;font-size: 45px;color: #377308;background-color: unset;font-style: normal; margin-bottom: 7px;}
     .aboutSub #vision {background-image: url(../images/about/aboutbg02.jpg); height: 100vh; display: flex;flex-direction: row;justify-content: space-around;overflow: hidden;}
-    .aboutSub #vision div:first-of-type {max-width: 750px;width: 40%;padding: 7% 8.3% 14.5% 0;}
+    .aboutSub #vision div:first-of-type {max-width: 750px;width: 40%;padding: 7% 0 14.5% 0;}
     .aboutSub #vision div h2 {font-size: 65px;color: white;padding-bottom: 90px;}
     .aboutSub #vision div p {font-size: 18px; color: white;padding-bottom: 50px;padding-right: 100px;}
     .aboutSub #vision .swiper-container {width: 23%; margin-right: 3%;}
