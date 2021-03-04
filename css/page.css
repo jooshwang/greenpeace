@@ -576,14 +576,14 @@
 
     .lifeSub section.firstBanner {padding-bottom: 14%;clip-path: polygon(0% 0%,100% 0%,100% 85%,60% 85%,50% 100%,40% 85%,0% 85%);}
     .lifeSub section.lifeAbout::after {content: ''; display: block; visibility: hidden; clear: both;}
-    .lifeSub section.lifeAbout {max-width: 1100px;width: 57.89%;margin: 6% auto 12%;}
+    .lifeSub section.lifeAbout {max-width: 1100px;width: 80%;margin: 6% auto 12%;}
     .lifeSub section.lifeAbout h2 {font-size: 80px;text-align: center;margin-bottom: 8.3%;}
     .lifeSub section.lifeAbout span {display: block;border-top: 5px solid #e48b0d;max-width: 430px;width: 39.09%;margin: 0 auto 9.72%;}
     .lifeSub section.lifeAbout p{width: 48%;padding-right: 2%;float: left;font-size: 20px;color: #5b5b5b;line-height: 30px;}
     .lifeSub section.lifeSign {padding: 20% 0;margin: 10% 0;background-image: url(../images/life/lifebg01.jpg);position: relative;}
     .lifeSub section.lifeSign div.diamondBox {
         width: 35.73%;margin: 0 auto;background-image: url(../images/life/life_bg.png);text-align: center;position: absolute;
-        left: 22%;padding: 19% 10%;top: -32%;background-repeat: no-repeat;background-position: center;color: white;}
+        left: 22%;padding: 19% 10%;top: -32%;background-repeat: no-repeat;background-position: center; background-size: contain; color: white;}
     .lifeSub section.lifeSign div.diamondBox h3 {font-size: 35px;padding: 15% 0 3%;}
     .lifeSub section.lifeSign div.diamondBox p{line-height: 30px;margin-bottom: 5%;} 
     .lifeSub section.lifeSign div.diamondBox span {display: block;margin-bottom: 5%;}
@@ -595,7 +595,7 @@
     .lifeSub section.challenge02 ul li:first-of-type {background-image: url(../images/life/life_challge01.png);}
     .lifeSub section.challenge02 ul li:nth-of-type(2) {background-image: url(../images/life/life_challge02.png); margin-top: 10%;}
     .lifeSub section.challenge02 ul li:last-of-type {background-image: url(../images/life/life_challge03.png);}
-    .lifeSub section.timeline {max-width: 1100px;width: 57.89%;margin: 0 auto;}
+    .lifeSub section.timeline {max-width: 1100px;width: 90%;margin: 0 auto;}
     .lifeSub section.timeline h2 {font-size: 80px;text-align: center;margin-bottom: 6%;}
     .lifeSub section.timeline ul {max-width: 950px;width: 86.36%;margin: 0 auto 15.74%;color: #454545;}
     .lifeSub section.timeline ul li{padding: 4% 0;border-bottom: 5px solid #eee;display: flex;flex-direction: row;}
@@ -903,7 +903,7 @@
     .forestSub .forest_cause .navBox {max-width: 1540px;width: 81.05%;margin: 0 auto;}
     .forestSub .forest_cause .navBox::after {content: ''; display: block; visibility: hidden; clear: both;}
     .forestSub .forest_cause .navBox img {width: 50%;float: left;}
-    .forestSub .forest_cause .navBox h2 {float: left;width: 20%;margin: 0 25% 5% 5%;padding-top: 10%;}
+    .forestSub .forest_cause .navBox h2 {float: left;width: 30%;margin: 0 5% 5% 5%;}
     .forestSub .forest_cause .navBox p {width: 45%;float: left;margin-left: 5%;line-height: 36px;font-size: 22px;}
     .forestSub .forest_bn {background-image: url(../images/forest/forestBg_02.jpg);text-align: center; padding: 15% 0;}
     .forestSub .forest_bn p {max-width: 1220px;width: 64.21%;margin: 0 auto 2%;line-height: 22px;}
@@ -933,7 +933,7 @@
     .lifeSub section.lifeSign {padding: 20% 0;margin: 10% 0;background-image: url(../images/life/lifebg01.jpg);position: relative;}
     .lifeSub section.lifeSign div.diamondBox {
         width: 35.73%;margin: 0 auto;background-image: url(../images/life/life_bg.png);text-align: center;position: absolute;
-        left: 22%;padding: 19% 10%;top: -32%;background-repeat: no-repeat;background-position: center;color: white;}
+        left: 22%;padding: 19% 10%;top: -32%;background-repeat: no-repeat;background-position: center; background-size: contain; color: white;}
     .lifeSub section.lifeSign div.diamondBox h3 {font-size: 35px;padding: 15% 0 3%;}
     .lifeSub section.lifeSign div.diamondBox p{line-height: 30px;margin-bottom: 5%;} 
     .lifeSub section.lifeSign div.diamondBox span {display: block;margin-bottom: 5%;}
@@ -1035,7 +1035,7 @@
     .plasticSub section.pt_sign > div.signBox div.signInBox h3 {margin-bottom: 28.18%;}
     .plasticSub section.pt_sign > div.signBox div.signInBox h3,
     .sign figure figcaption dl dt {font-size: 35px;}
-    .sign figure figcaption dl dt {width: 350px;margin-bottom: 55%;margin-top: 47%;}
+    .sign figure figcaption dl dt {width: 350px;margin-bottom: 28%;margin-top: 30%;}
     .plasticSub section.pt_sign > div.signBox div.signInBox span{display: block;margin-bottom: 12%;}
     .sign figure figcaption dl dd {margin-bottom: 20%;}
     .plasticSub section.pt_sign > div.signBox div.signInBox a,
