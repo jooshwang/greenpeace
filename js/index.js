@@ -3,6 +3,7 @@ $(document).ready(function(){
     clickTab();
     navclick();
     loopslide();
+    clickAl();
     // $('.slider').bxSlider();
     /*scrollEY();    
     Swiper();
@@ -71,7 +72,11 @@ function loopslide(){
     });
 }
 
-
+function clickAl(){
+    $(".Wrap .donate div .tabWrap .tabpage input[type=submit]").click(function(){
+        alert('Thank you for joining us.');
+    });
+}
 // function scrollEY(){
 //     $(document).scroll(function(){
 //         console.log("scrolltop="+ $(document).scrollTop());
