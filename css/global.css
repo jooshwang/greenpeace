@@ -398,11 +398,11 @@ section.challenge02 ul li,
         flex-wrap: wrap;
         box-sizing: border-box;}
     /*.Wrap #donate div.tabWrap ul.tabMenu::after {content: ''; display: block; visibility: hidden; clear: both;}*/
-    .Wrap .donate div.tabWrap ul.tabMenu li {max-width: 175px;
+    .Wrap .donate div.tabWrap ul.tabMenu li {
         width: 50%;
         margin: 0 auto;
         text-align: center;
-        padding: 3% 15%;
+        padding: 3% 0;
         cursor: pointer;}
     .Wrap .donate div.tabWrap ul.tabMenu li.active {color: white; border-radius: 20px; background-color: #72a74d;}
     .Wrap .donate div.tabWrap div.tabpage {max-width: 900px;
@@ -429,7 +429,7 @@ section.challenge02 ul li,
         font-size: 25px;
         cursor: pointer;}
     .Wrap .donate div.tabWrap div.tabpage ul.userDoller li.active {color: white; background-color: #72a74d;}
-    .Wrap .donate div.tabWrap div.tabpage ul.userDoller li:not(:first-child) {margin-left: 45px;}
+    /* .Wrap .donate div.tabWrap div.tabpage ul.userDoller li:not(:first-child) {margin-left: 45px;} */
     .Wrap .donate div.tabWrap div.tabpage input[type="text"] {    width: 100%;
         text-align: center;
         padding: 20px 0;
