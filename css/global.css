@@ -451,7 +451,7 @@ section.challenge02 ul li,
     header nav.pc_nav ul li{display: inline-block;}
     header nav.pc_nav ul li > a {display: inline-block; line-height: 35px; padding-bottom: 3px; opacity: 0.5; }
     header nav.pc_nav ul li > a:hover {border-bottom: 3px solid #367c2b;}
-    header nav.pc_nav ul li.active,
+    /* header nav.pc_nav ul li.active {opacity: 1; border-bottom: 3px solid #367c2b; transition: all 1s;} */
     header nav.pc_nav ul li a.active {opacity: 1; border-bottom: 3px solid #367c2b; transition: all 1s;}
     header nav.pc_nav ul li:not(:first-child){margin-left: 3.57%;}
     header nav.tablet_nav {display: none;}

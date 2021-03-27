@@ -37,12 +37,12 @@
             */
             $(".pagination a").on("click", $.scrollify.move);
 
-            $("header nav ul li").click(function(){
-            var $menu = $(this).index();
-            $(".pagination li a").removeClass('active');
-            $(".pagination li").eq($menu).children('a').addClass('active');
+            // $("header nav ul li").click(function(){
+            // var $menu = $(this).index();
+            // $(".pagination li a").removeClass('active');
+            // $(".pagination li").eq($menu).children('a').addClass('active');
             
-            });
+            // });
 
         });
    

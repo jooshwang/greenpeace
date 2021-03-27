@@ -80,15 +80,15 @@ function clickAl(){
 }
 
 function scroll(){
-    var $menu = $('nav.pc_nav ul li'),
+    var $menu_btn = $('nav.pc_nav ul li a'),
         $contents = $('#mainWrap > section');
 
     $(window).scroll(function(){
         $contents.each(function(){
             if($(this).offset().top <= $(window).scrollTop()){
                 var idx = $(this).index();
-                $menu.removeClass('active');
-                $menu.eq(idx).addClass('active');
+                $menu_btn.removeClass('active');
+                $menu_btn.eq(idx).addClass('active');
             }
         });
     });
