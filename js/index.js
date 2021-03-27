@@ -80,7 +80,7 @@ function clickAl(){
 }
 
 function scroll(){
-    var $menu = $('header .checking nav ul li'),
+    var $menu = $('nav.pc_nav ul li'),
         $contents = $('#mainWrap > section');
 
     $(window).scroll(function(){
@@ -93,6 +93,8 @@ function scroll(){
         });
     });
 }
+
+
 
 
 
