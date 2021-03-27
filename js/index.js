@@ -4,6 +4,7 @@ $(document).ready(function(){
     navclick();
     loopslide();
     clickAl();
+    scroll();
     // $('.slider').bxSlider();
     /*scrollEY();    
     Swiper();
@@ -77,6 +78,26 @@ function clickAl(){
         alert('Thank you for joining us.');
     });
 }
+
+function scroll(){
+    var $menu = $('header .checking nav ul li'),
+        $contents = $('#mainWrap > section');
+
+    $(window).scroll(function(){
+        $contents.each(function(){
+            if($(this).offset().top <= $(window).scrollTop()){
+                var idx = $(this).index();
+                $menu.removeClass('active');
+                $menu.eq(idx).addClass('active');
+            }
+        });
+    });
+}
+
+
+
+
+
 // function scrollEY(){
 //     $(document).scroll(function(){
 //         console.log("scrolltop="+ $(document).scrollTop());
