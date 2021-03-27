@@ -85,7 +85,7 @@ function scroll(){
 
     $(window).scroll(function(){
         $contents.each(function(){
-            if($(this).offset().top <= $(window).scrollTop()){
+            if($(this).offset().top < $(window).scrollTop()){
                 var idx = $(this).index();
                 $menu_btn.removeClass('active');
                 $menu_btn.eq(idx).addClass('active');
